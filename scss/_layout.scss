@@ -1,43 +1,147 @@
 @charset "UTF-8";
-@use 'settings' as *;
-@use 'utility' as *;
-@use 'core' as *;
+@use "settings" as *;
+@use "utility" as *;
+@use "core" as *;
+
+// --------------------------------------------------
+// Content-main
+// --------------------------------------------------
+.content-main {
+  header,
+  footer {
+    width: calc(50% - 250px);
+    position: fixed;
+    height: 100%;
+    background: #1c2128;
+    top: 0;
+  }
+  header {
+    left: 0;
+  }
+  footer {
+    right: 0;
+  }
+  main {
+    width: 500px;
+    margin: 0 auto;
+    &:before,
+    &:after {
+      content: "";
+      width: 500px;
+      height: 90px;
+      background: url(img/common/bdr_img01.png) no-repeat center / 100% 100%;
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:before {
+      top: 0;
+    }
+
+    &:after {
+      bottom: 0;
+      transform: translateX(-50%) rotate(180deg);
+      transform-origin: center;
+    }
+  }
+}
 
 // --------------------------------------------------
 // Header
 // --------------------------------------------------
-header {}
+header {
+  .h-wrap {
+    height: 100%;
+    overflow: auto;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .logo-box {
+      font: {
+        size: 3rem;
+        weight: 700;
+        family: $f-roboto;
+      }
+      color: $primary;
+      line-height: 1;
+      padding: 0 50px;
+      margin-bottom: 40px;
+    }
+    .nav-list {
+      & > ul {
+        & > li {
+          padding: 30px 50px;
+          transition: 0.3s;
+          & > .en-txt {
+            font: {
+              size: 3rem;
+              weight: 700;
+              family: $f-roboto;
+            }
+            color: $primary;
+            line-height: 1;
+            margin-bottom: 5px;
+          }
+          & > .jp-txt {
+            font-weight: 700;
+            transition: 0.3s;
+          }
+          &:hover,
+          &.-current {
+            background: #394049;
+            & > .jp-txt {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+    .copy {
+      font: {
+        size: 12px;
+        weight: 300;
+        family: $f-roboto;
+      }
+
+      color: $primary;
+      margin-top: 40px;
+    }
+  }
+}
 
 // --------------------------------------------------
 // Key-visual
 // --------------------------------------------------
-.key-visual {}
+.key-visual {
+}
 
 // --------------------------------------------------
 // メニューバー
 // --------------------------------------------------
-.slide-menu {}
+.slide-menu {
+}
 
 // --------------------------------------------------
 // Body
 // --------------------------------------------------
-
 body {
   width: 100%;
   text-align: justify;
+  background: #282c34;
 }
 
 // --------------------------------------------------
 // Side
 // --------------------------------------------------
 
-
 // --------------------------------------------------
 // Page
 // --------------------------------------------------
 
-
 // --------------------------------------------------
 // Footer
 // --------------------------------------------------
-footer {}
+footer {
+}

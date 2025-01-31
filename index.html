@@ -2,18 +2,18 @@
 <html lang="ja">
   <head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/website#">
     <meta charset="UTF-8" />
-    <title>ページタイトル</title>
+    <title>CBS｜ポートフォリオ</title>
     <!-- XSS保護 (現代のブラウザでは自動ですが念のため) -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="コンテンツ内容" />
-    <meta name="keywords" content="キーワード" />
+    <meta name="description" content="チェボンスのポートフォリオです。制作実績からプロフィール、スキルを記載していますのでご覧ください。" />
+    <meta name="keywords" content="htmlコーダー,web制作,ポートフォリオ,web,html,css,javascript,php,wordpress" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <meta name="format-detection" content="email=no,telephone=no,address=no" />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="作成者名または会社名" />
-    <meta property="og:title" content="ページタイトル" />
+    <meta name="author" content="Choe BeomSu" />
+    <meta property="og:title" content="CBS｜ポートフォリオ" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="コンテンツ内容" />
+    <meta property="og:description" content="チェボンスのポートフォリオです。制作実績からプロフィール、スキルを記載していますのでご覧ください。" />
     <meta property="og:url" content="url" />
     <meta property="og:site_name" content="ページタイトル" />
     <meta property="og:image" content="ogp画像" />
@@ -44,64 +44,490 @@
     <!-- ↑画像↑ -->
 
     <!-- googleFont -->
-    <link rel="stylesheet" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet" />
     <!-- googleFont -->
 
-    <link rel="stylesheet" href="css/fontawesome-free/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
-
-    <!-- PWA必要なときのみ -->
-    <!-- <link rel="manifest" href="/manifest.json"> -->
   </head>
 
   <body>
     <script src="js/jquery.min.js"></script>
     <script src="js/common.js"></script>
-    <header>
-      <div class="h-wrap">
-        <h1 class="logo-box">
-          <img src="" alt="" />
-        </h1>
-        <div class="r-box">
+    <div class="content-main">
+      <header>
+        <div class="h-wrap">
+          <h1 class="logo-box">LOGO</h1>
           <nav class="nav-list">
             <ul>
-              <li>
-                <a href="#">ボタン</a>
+              <li class="hover-all -current">
+                <a href="#link01">トップに戻る</a>
+                <p class="en-txt">TOP</p>
+                <p class="jp-txt">トップに戻る</p>
+              </li>
+              <li class="hover-all">
+                <a href="#link02">個人制作</a>
+                <p class="en-txt">WORKS</p>
+                <p class="jp-txt">個人制作</p>
+              </li>
+              <li class="hover-all">
+                <a href="#link03">プロフィール</a>
+                <p class="en-txt">PROFILE</p>
+                <p class="jp-txt">プロフィール</p>
+              </li>
+              <li class="hover-all">
+                <a href="#link04">スキル</a>
+                <p class="en-txt">SKILL</p>
+                <p class="jp-txt">スキル</p>
               </li>
             </ul>
           </nav>
+          <p class="copy">©choe beomsu</p>
         </div>
+      </header>
+      <main>
+        <section id="link01" class="key-visual sec-box">
+          <div class="txt-box">
+            <h2>
+              Choe<br />
+              Beom Su
+            </h2>
+            <p class="sub-key-txt">PORTFOLIO</p>
+            <p class="sub-txt">HTML CODER / WEB CODER</p>
+            <p>
+              <a href="https://github.com/beomsu6567/" class="git-btn" target="_blank">github</a>
+            </p>
+          </div>
+          <div class="scroll-btn">
+            <a href="#link02">個人製作コンテンツ</a>
+            <p class="txt">SCROLL</p>
+          </div>
+        </section>
+        <section id="link02 sec-box">
+          <p class="en-ttl">WORKS</p>
+          <h3>個人製作</h3>
+          <ul class="card-list">
+            <li class="modal-btn">
+              <div class="img-box">
+                <img src="img/page/index/img01.png" width="190" height="172" alt="タイトルが入ります。" loading="lazy" />
+              </div>
+              <div class="txt-box">
+                <time datetime="2025-01-31">2025.01.31</time>
+                <p class="ttl">タイトルタイトル</p>
+                <ul class="tag-list">
+                  <li><i class="fa-brands fa-html5"></i></li>
+                  <li><i class="fa-brands fa-css3-alt"></i></li>
+                  <li><i class="fa-brands fa-js"></i></li>
+                  <li><i class="fa-brands fa-php"></i></li>
+                  <li><i class="fa-brands fa-wordpress-simple"></i></li>
+                </ul>
+              </div>
+            </li>
+            <li class="modal-btn">
+              <div class="img-box">
+                <img src="img/page/index/img01.png" width="190" height="172" alt="タイトルが入ります。" loading="lazy" />
+              </div>
+              <div class="txt-box">
+                <time datetime="2025-01-31">2025.01.31</time>
+                <p class="ttl">タイトルタイトル</p>
+                <ul class="tag-list">
+                  <li><i class="fa-brands fa-html5"></i></li>
+                  <li><i class="fa-brands fa-css3-alt"></i></li>
+                  <li><i class="fa-brands fa-js"></i></li>
+                  <li><i class="fa-brands fa-php"></i></li>
+                  <li><i class="fa-brands fa-wordpress-simple"></i></li>
+                </ul>
+              </div>
+            </li>
+            <li class="modal-btn">
+              <div class="img-box">
+                <img src="img/page/index/img01.png" width="190" height="172" alt="タイトルが入ります。" loading="lazy" />
+              </div>
+              <div class="txt-box">
+                <time datetime="2025-01-31">2025.01.31</time>
+                <p class="ttl">タイトルタイトル</p>
+                <ul class="tag-list">
+                  <li><i class="fa-brands fa-html5"></i></li>
+                  <li><i class="fa-brands fa-css3-alt"></i></li>
+                  <li><i class="fa-brands fa-js"></i></li>
+                  <li><i class="fa-brands fa-php"></i></li>
+                  <li><i class="fa-brands fa-wordpress-simple"></i></li>
+                </ul>
+              </div>
+            </li>
+            <li class="modal-btn">
+              <div class="img-box">
+                <img src="img/page/index/img01.png" width="190" height="172" alt="タイトルが入ります。" loading="lazy" />
+              </div>
+              <div class="txt-box">
+                <time datetime="2025-01-31">2025.01.31</time>
+                <p class="ttl">タイトルタイトル</p>
+                <ul class="tag-list">
+                  <li><i class="fa-brands fa-html5"></i></li>
+                  <li><i class="fa-brands fa-css3-alt"></i></li>
+                  <li><i class="fa-brands fa-js"></i></li>
+                  <li><i class="fa-brands fa-php"></i></li>
+                  <li><i class="fa-brands fa-wordpress-simple"></i></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="modal-content-box">
+            <li class="modal-content">
+              <div class="bg-box"><!--  --></div>
+              <div class="content-box">
+                <div class="modal-close-btn">
+                  <span><!--  --></span>
+                  <span><!--  --></span>
+                </div>
+                <p class="ttl">タイトルタイトル</p>
+                <div class="swiper-modal-img">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/page/index/img01.png" width="400" height="259" alt="トップページ" loading="lazy" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/page/index/img01.png" width="400" height="259" alt="サブページ" loading="lazy" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+                <table class="table01">
+                  <tbody>
+                    <tr>
+                      <th>私用した言語</th>
+                      <td>HTML, CSS, JavaScript(Jquery), php(wordpress)</td>
+                    </tr>
+                    <tr>
+                      <th>使用したプラグイン（JS）</th>
+                      <td><a href="https://swiperjs.com/" target="_blank">swiper</a></td>
+                    </tr>
+                    <tr>
+                      <th>使用したプラグイン（wordpress）</th>
+                      <td><a href="https://ja.wordpress.org/plugins/all-in-one-seo-pack/" target="_blank">All in One SEO</a></td>
+                    </tr>
+                    <tr>
+                      <th>使用テンプレート</th>
+                      <td>
+                        <a href="https://github.com/beomsu6567/template" target="_blank">自作テンプレート</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>githubリンク</th>
+                      <td>
+                        <a href="#" target="_blank">https://github.com/</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>制作背景</th>
+                      <td>制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li class="modal-content">
+              <div class="bg-box"><!--  --></div>
+              <div class="content-box">
+                <div class="modal-close-btn">
+                  <span><!--  --></span>
+                  <span><!--  --></span>
+                </div>
+                <p class="ttl">タイトルタイトル</p>
+                <div class="swiper-modal-img">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/page/index/img01.png" width="400" height="259" alt="トップページ" loading="lazy" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/page/index/img01.png" width="400" height="259" alt="サブページ" loading="lazy" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+                <table class="table01">
+                  <tbody>
+                    <tr>
+                      <th>私用した言語</th>
+                      <td>HTML, CSS, JavaScript(Jquery), php(wordpress)</td>
+                    </tr>
+                    <tr>
+                      <th>使用したプラグイン（JS）</th>
+                      <td><a href="https://swiperjs.com/" target="_blank">swiper</a></td>
+                    </tr>
+                    <tr>
+                      <th>使用したプラグイン（wordpress）</th>
+                      <td><a href="https://ja.wordpress.org/plugins/all-in-one-seo-pack/" target="_blank">All in One SEO</a></td>
+                    </tr>
+                    <tr>
+                      <th>使用テンプレート</th>
+                      <td>
+                        <a href="https://github.com/beomsu6567/template" target="_blank">自作テンプレート</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>githubリンク</th>
+                      <td>
+                        <a href="#" target="_blank">https://github.com/</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>制作背景</th>
+                      <td>制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li class="modal-content">
+              <div class="bg-box"><!--  --></div>
+              <div class="content-box">
+                <div class="modal-close-btn">
+                  <span><!--  --></span>
+                  <span><!--  --></span>
+                </div>
+                <p class="ttl">タイトルタイトル</p>
+                <div class="swiper-modal-img">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/page/index/img01.png" width="400" height="259" alt="トップページ" loading="lazy" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/page/index/img01.png" width="400" height="259" alt="サブページ" loading="lazy" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+                <table class="table01">
+                  <tbody>
+                    <tr>
+                      <th>私用した言語</th>
+                      <td>HTML, CSS, JavaScript(Jquery), php(wordpress)</td>
+                    </tr>
+                    <tr>
+                      <th>使用したプラグイン（JS）</th>
+                      <td><a href="https://swiperjs.com/" target="_blank">swiper</a></td>
+                    </tr>
+                    <tr>
+                      <th>使用したプラグイン（wordpress）</th>
+                      <td><a href="https://ja.wordpress.org/plugins/all-in-one-seo-pack/" target="_blank">All in One SEO</a></td>
+                    </tr>
+                    <tr>
+                      <th>使用テンプレート</th>
+                      <td>
+                        <a href="https://github.com/beomsu6567/template" target="_blank">自作テンプレート</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>githubリンク</th>
+                      <td>
+                        <a href="#" target="_blank">https://github.com/</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>制作背景</th>
+                      <td>制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li class="modal-content">
+              <div class="bg-box"><!--  --></div>
+              <div class="content-box">
+                <div class="modal-close-btn">
+                  <span><!--  --></span>
+                  <span><!--  --></span>
+                </div>
+                <p class="ttl">タイトルタイトル</p>
+                <div class="swiper-modal-img">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/page/index/img01.png" width="400" height="259" alt="トップページ" loading="lazy" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/page/index/img01.png" width="400" height="259" alt="サブページ" loading="lazy" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+                <table class="table01">
+                  <tbody>
+                    <tr>
+                      <th>私用した言語</th>
+                      <td>HTML, CSS, JavaScript(Jquery), php(wordpress)</td>
+                    </tr>
+                    <tr>
+                      <th>使用したプラグイン（JS）</th>
+                      <td><a href="https://swiperjs.com/" target="_blank">swiper</a></td>
+                    </tr>
+                    <tr>
+                      <th>使用したプラグイン（wordpress）</th>
+                      <td><a href="https://ja.wordpress.org/plugins/all-in-one-seo-pack/" target="_blank">All in One SEO</a></td>
+                    </tr>
+                    <tr>
+                      <th>使用テンプレート</th>
+                      <td>
+                        <a href="https://github.com/beomsu6567/template" target="_blank">自作テンプレート</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>githubリンク</th>
+                      <td>
+                        <a href="#" target="_blank">https://github.com/</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>制作背景</th>
+                      <td>制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。制作の背景が入ります。</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section id="link03" class="sec-box">
+          <p class="en-ttl">PROFILE</p>
+          <h3>プロフィール</h3>
+          <div class="profile-box">
+            <div class="img-box">
+              <img src="img/page/index/img02.jpg" width="120" height="120" alt="プロフィール画像" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="birth-txt">1994.06.04</p>
+              <p class="en-name">Choe BeomSu</p>
+              <p class="kanji-name">崔 範洙<span class="kana-txt">（チェ ボンス）</span></p>
+              <p class="from-txt">韓国出身</p>
+            </div>
+          </div>
+          <div class="owl80 owl50-tb">
+            <div class="appeal-box">
+              <h4>学歴</h4>
+              <table class="table02">
+                <thead>
+                  <tr>
+                    <th>年</th>
+                    <th>月</th>
+                    <th>学歴</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2000年</td>
+                    <td>10月</td>
+                    <td>内容が入ります。</td>
+                  </tr>
+                  <tr>
+                    <td>2000年</td>
+                    <td>10月</td>
+                    <td>内容が入ります。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="appeal-box">
+              <h4>職歴</h4>
+              <table class="table02">
+                <thead>
+                  <tr>
+                    <th>年</th>
+                    <th>月</th>
+                    <th>職歴</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2000年</td>
+                    <td>10月</td>
+                    <td>内容が入ります。</td>
+                  </tr>
+                  <tr>
+                    <td>2000年</td>
+                    <td>10月</td>
+                    <td>内容が入ります。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <section id="link04" class="sec-box">
+          <p class="en-ttl">SKILL</p>
+          <h3>スキル</h3>
+          <table class="table03">
+            <thead>
+              <tr>
+                <th></th>
+                <th>自分で調べて<br />コードをかける</th>
+                <th>自分で考えて<br />コードがかける</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>HTML</th>
+                <td><!--  --></td>
+                <td><i class="fa-solid fa-circle"></i></td>
+              </tr>
+              <tr>
+                <th>CSS</th>
+                <td><!--  --></td>
+                <td><i class="fa-solid fa-circle"></i></td>
+              </tr>
+              <tr>
+                <th>JavaScript<br />(Juqery)</th>
+                <td><!--  --></td>
+                <td><i class="fa-solid fa-circle"></i></td>
+              </tr>
+              <tr>
+                <th>php<br />(wordpress)</th>
+                <td><i class="fa-solid fa-circle"></i></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <p class="tankyou-en">Thank You</p>
+          <p class="tankyou-jp">最後までご覧いただきありがとうございます</p>
+        </section>
+      </main>
+      <div class="page-top">
+        <a href="#"><i class="fa-solid fa-caret-up"></i></a>
       </div>
-    </header>
-    <div class="slide-menu">
-      <nav class="nav-list">
-        <ul>
-          <li>
-            <a href="#">ボタン</a>
-          </li>
-        </ul>
-      </nav>
+      <footer>
+        <div class="f-wrap">
+          <p class="en-ttl">CONTACT</p>
+          <p class="jp-ttl">お問い合わせ</p>
+          <ul class="infor-list">
+            <li>
+              <span>TEL</span>
+              <a href="tel:09090952532" target="_blank">090-9095-2532</a>
+            </li>
+            <li>
+              <span>Email</span>
+              <a href="mailto:beomsu6567@gmail.com">beomsu6567@gmail.com</a>
+            </li>
+          </ul>
+          <ul class="btn-list">
+            <li>
+              <a href="#" class="button01 -google">Google Form</a>
+            </li>
+            <li>
+              <a href="#" class="button01 -git">github</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tb f-wrap">
+          <h1 class="logo-box">LOGO</h1>
+          <p class="copy">©choe beomsu</p>
+        </div>
+      </footer>
     </div>
-    <div class="key-visual">
-      <div class="key-img">
-        <img src="" alt="" />
-      </div>
-      <div class="key-txt">
-        <h2>テキスト</h2>
-      </div>
-    </div>
-    <main>
-      <div class="container"></div>
-    </main>
-    <footer>
-      <div class="logo-box"></div>
-      <nav class="nav-list">
-        <ul>
-          <li>
-            <a href="#">ボタン</a>
-          </li>
-        </ul>
-      </nav>
-    </footer>
   </body>
 </html>
