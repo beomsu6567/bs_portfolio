@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+// ページで使用しているカラー
+$primary: #000; //メインカラー
+$secondary: #000; // セカンドカラー
+$base-f-color: #333; // 文字の基本カラー
+$base-link-color: $primary; // aタグの基本カラー
+
+// アイコンフォント
+$f-fa: "Font Awesome 6 Free";
+$f-fab: "Font Awesome 6 Brands";
+
+// 文字フォント
+$base-f-family: "ヒラギノ角ゴシック ProN", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+$f-min: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "MS PMincho", "游明朝体", "Yu Mincho", YuMincho, serif;
+
+// コンテナ幅
+$container-width: 1000px;
+
+// ブレークポイント
+$screen-tb: 768px;
+$screen-sp: 480px;
+$screen-pc-min: $screen-tb + 1;
+$screen-tb-min: $screen-sp + 1;
+
+// ページ内リンクの時にヘッダー数値を除くための数値
+$header-height: 80px;
+$header-height-tb: 70px;
+
+// フォントベース
+$base-f-size: 1.6rem; // 基本フォントサイズ
+$base-f-size-tb: 1.4rem; // タブレット以下の基本フォントサイズ
+$base-f-weight: 400; // 基本フォント太さ
+$base-lh: 2; // 基本line-height
+$base-ls: 0.06em; // 基本letter-spacing
+
+// コンテナ両サイドの余白
+$gutter: 20px;
+
+$container-pc: $container-width + $gutter;

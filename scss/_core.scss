@@ -1,0 +1,280 @@
+@charset "UTF-8";
+@use "utility" as *;
+@use "settings" as *;
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: $base-ls;
+  scroll-margin-top: $header-height;
+
+  @media only screen and (max-width: $screen-tb) {
+    scroll-margin-top: $header-height-tb;
+  }
+}
+
+::before,
+::after {
+  display: inline-block;
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+html {
+  font: {
+    size: 62.5%;
+  }
+
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  color: $base-f-color;
+  font-size: $base-f-size;
+  font-family: $base-f-family;
+  font-weight: $base-f-weight;
+
+  @media only screen and (max-width: $screen-tb) {
+    font-size: $base-f-size-tb;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: $container-pc;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 calc($gutter/2);
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+p,
+dt,
+dd,
+li,
+th,
+td {
+  line-height: $base-lh;
+}
+
+img {
+  border: 0;
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  overflow: visible;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+a {
+  text-decoration: underline;
+  color: $base-link-color;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  //電話番号
+  &[href^="tel:"] {
+    color: $base-f-color;
+    text-decoration: underline;
+
+    @media only screen and (min-width: $screen-pc-min) {
+      text-decoration: none;
+      pointer-events: none;
+    }
+  }
+}
+
+.float {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  .left-box,
+  .left-sp {
+    float: left !important;
+  }
+
+  .right-box,
+  .right-sp {
+    float: right !important;
+  }
+
+  @media only screen and (max-width: $screen-tb) {
+    & > .left-box {
+      float: none !important;
+      width: 100% !important;
+    }
+
+    & > .right-box {
+      float: none !important;
+      width: 100% !important;
+    }
+  }
+
+  @media only screen and (max-width: $screen-sp) {
+    & > .left-sp {
+      float: none !important;
+      width: 100% !important;
+    }
+
+    & > .right-sp {
+      float: none !important;
+      width: 100% !important;
+    }
+  }
+}
+
+.w100 {
+  width: 100% !important;
+}
+
+// デバイスごとのディスプレイ指定クラス
+.pc {
+  @media only screen and (max-width: $screen-tb) {
+    display: none !important;
+  }
+}
+
+.pctb {
+  @media only screen and (max-width: $screen-sp) {
+    display: none !important;
+  }
+}
+
+.tb {
+  @media only screen and (min-width: $screen-pc-min) {
+    display: none !important;
+  }
+}
+
+.sp {
+  @media only screen and (min-width: $screen-tb-min) {
+    display: none !important;
+  }
+}
+
+.fade {
+  transition: opacity 0.3s;
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+//全体ホバー
+.hover-all {
+  position: relative;
+
+  > a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    font-size: 0;
+  }
+}
+
+// 行揃え指定クラス
+@include textalign();
+
+// フォントサイズクラス作成
+@include fontsize();
+
+// 余白クラスの生成
+@include spaceloop();
+
+// フクロウクラス
+@include owl();
+
+@media only screen and (max-width: $screen-tb) {
+  // 行揃え指定クラス
+  @include textalign(-tb);
+
+  // タブレット用余白クラスの生成
+  @include spaceloop(-tb);
+
+  // タブレット用フォントサイズクラスの生成
+  @include fontsize(-tb);
+
+  @include owl(-tb);
+}
+
+@media only screen and (max-width: $screen-sp) {
+  // 行揃え指定クラス
+  @include textalign(-sp);
+
+  // スマホ用余白クラスの生成
+  @include spaceloop(-sp);
+
+  // スマホ用フォントサイズクラスの生成
+  @include fontsize(-sp);
+
+  @include owl(-sp);
+}

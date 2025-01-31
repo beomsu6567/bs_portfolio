@@ -1,0 +1,67 @@
+@charset "UTF-8";
+$spacer: (
+  mt: margin-top,
+  mr: margin-right,
+  mb: margin-bottom,
+  ml: margin-left,
+  pt: padding-top,
+  pr: padding-right,
+  pb: padding-bottom,
+  pl: padding-left,
+);
+$align: left, right, center;
+
+// 行揃え指定クラス作成
+@mixin textalign($sufix: "") {
+  @each $value in $align {
+    .#{$value}-text#{$sufix} {
+      text-align: #{$value} !important;
+    }
+  }
+}
+
+// フォントサイズクラスの生成
+@mixin fontsize($sufix: "") {
+  @for $i from 8 through 40 {
+    .f#{$i}px#{$sufix} {
+      font-size: #{$i}px !important;
+    }
+  }
+}
+
+//余白クラス作成
+@mixin spaceloop($sufix: "") {
+  $i: 0;
+
+  @while $i <=200 {
+    @each $class, $style in $spacer {
+      .#{$class}#{$i}#{$sufix} {
+        #{$style}: #{$i}px !important;
+      }
+    }
+
+    @if $i >=20 {
+      $i: $i + 5;
+    }
+
+    @else {
+      $i: $i + 1;
+    }
+  }
+}
+
+
+// owl
+@mixin owl($sufix: "") {
+  $i: 5;
+
+  @while $i <=100 {
+    .owl#{$i}#{$sufix} {
+      >*+* {
+        margin-top: #{$i}px;
+      }
+    }
+
+    $i: $i + 5;
+  }
+}
