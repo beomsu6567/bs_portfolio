@@ -23,11 +23,11 @@ Tags: blog, custom-background, custom-header (テーマの特徴を示すタグ)
   font-size: inherit;
   line-height: inherit;
   letter-spacing: 0;
-  scroll-margin-top: 80px;
+  scroll-margin-top: 0;
 }
 @media only screen and (max-width: 1000px) {
   * {
-    scroll-margin-top: 70px;
+    scroll-margin-top: 0;
   }
 }
 
@@ -5353,6 +5353,134 @@ a[href^="tel:"] {
     margin-top: 100px;
   }
 }
+.git-btn {
+  text-decoration: none;
+  line-height: 1.5;
+  display: inline-block;
+}
+.git-btn:before {
+  content: "\f113";
+  font-weight: 500;
+  font-family: "Font Awesome 6 Brands";
+  text-decoration: none;
+  margin-right: 10px;
+}
+@media only screen and (min-width: 1001px) {
+  .git-btn:hover {
+    text-decoration: underline;
+  }
+}
+
+.en-ttl {
+  font-size: 5rem;
+  font-weight: 400;
+  font-family: "Roboto", serif;
+  color: #adbac7;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin-bottom: 80px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px 20px;
+}
+.card-list > li {
+  width: calc(50% - 10px);
+  cursor: pointer;
+}
+.card-list > li .img-box {
+  position: relative;
+  padding-bottom: 65%;
+  margin-bottom: 10px;
+}
+.card-list > li .img-box > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-list > li .txt-box > time {
+  font-size: 14px;
+  font-weight: 300;
+}
+.card-list > li .txt-box > .ttl {
+  color: #adbac7;
+  margin-bottom: 3px;
+}
+.card-list > li .txt-box .tag-list {
+  display: flex;
+}
+.card-list > li .txt-box .tag-list > * + * {
+  margin-left: 10px;
+}
+.card-list > li .txt-box .tag-list > li > i {
+  font-size: 14px;
+}
+.card-list > li .txt-box .tag-list > li > i.fa-html5 {
+  color: #ff9a50;
+}
+.card-list > li .txt-box .tag-list > li > i.fa-css3-alt {
+  color: #74c8d1;
+}
+.card-list > li .txt-box .tag-list > li > i.fa-js {
+  color: #ffe365;
+}
+.card-list > li .txt-box .tag-list > li > i.fa-php {
+  color: #505b93;
+}
+.card-list > li .txt-box .tag-list > li > i.fa-wordpress-simple {
+  color: #fff;
+}
+.card-list > li:nth-of-type(2n) {
+  transform: translateY(48px);
+}
+@media only screen and (min-width: 1001px) {
+  .card-list > li {
+    transition: 0.3s;
+  }
+  .card-list > li:hover {
+    opacity: 0.7;
+  }
+}
+
+@keyframes scrollAnimation {
+  0% {
+    left: 0;
+    right: unset;
+    width: 0;
+  }
+  30% {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  50% {
+    width: 100%;
+    left: unset;
+    right: 0;
+  }
+  70% {
+    width: 100%;
+    left: unset;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    left: unset;
+    right: 0;
+  }
+}
 .content-main header,
 .content-main footer {
   width: calc(50% - 250px);
@@ -5379,6 +5507,7 @@ a[href^="tel:"] {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 10;
 }
 .content-main main:before {
   top: 0;
@@ -5405,6 +5534,7 @@ header .h-wrap .logo-box {
   line-height: 1;
   padding: 0 50px;
   margin-bottom: 40px;
+  letter-spacing: 0.06em;
 }
 header .h-wrap .nav-list > ul > li {
   padding: 30px 50px;
@@ -5434,10 +5564,139 @@ header .h-wrap .copy {
   font-family: "Roboto", serif;
   color: #adbac7;
   margin-top: 40px;
+  padding: 0 50px;
+}
+
+.key-visual {
+  position: relative;
+}
+.key-visual .txt-box h2 {
+  font-size: 8rem;
+  font-family: "Roboto", serif;
+  color: #adbac7;
+  line-height: 0.9;
+  margin-bottom: 50px;
+}
+.key-visual .txt-box .sub-key-txt {
+  font-size: 4rem;
+  font-weight: 300;
+  font-family: "Roboto", serif;
+  line-height: 0.8;
+  margin-bottom: 50px;
+}
+.key-visual .txt-box .sub-txt {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Roboto", serif;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+.key-visual .scroll-btn {
+  position: absolute;
+  right: 35px;
+  bottom: 50px;
+  width: 150px;
+  transform: rotate(90deg);
+  transform-origin: right bottom;
+  padding-bottom: 5px;
+}
+.key-visual .scroll-btn > .txt {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Roboto", serif;
+  color: #fff;
+}
+.key-visual .scroll-btn:before {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: scrollAnimation 2s infinite;
 }
 
 body {
   width: 100%;
   text-align: justify;
   background: #282c34;
+}
+
+footer {
+  padding: 50px;
+}
+footer .f-wrap .en-ttl {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: "Roboto", serif;
+  color: #adbac7;
+  margin-bottom: 0;
+}
+footer .f-wrap .jp-ttl {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #768390;
+  margin-bottom: 40px;
+}
+footer .f-wrap .infor-list {
+  margin-bottom: 40px;
+}
+footer .f-wrap .infor-list > * + * {
+  margin-top: 15px;
+}
+footer .f-wrap .infor-list > li {
+  display: flex;
+}
+footer .f-wrap .infor-list > li > a, footer .f-wrap .infor-list > li > span {
+  color: #768390;
+  line-height: 1;
+  display: block;
+}
+footer .f-wrap .infor-list > li > span {
+  width: 60px;
+}
+footer .f-wrap .infor-list > li > a {
+  width: calc(100% - 60px);
+}
+footer .f-wrap .btn-list > * + * {
+  margin-top: 10px;
+}
+footer .f-wrap .btn-list > li > a {
+  display: inline-block;
+  text-decoration: none;
+  padding-right: 20px;
+  position: relative;
+}
+footer .f-wrap .btn-list > li > a:after {
+  content: "\f105";
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+@media only screen and (min-width: 1001px) {
+  footer .f-wrap .btn-list > li > a:after {
+    transition: 0.3s;
+  }
+  footer .f-wrap .btn-list > li > a:hover:after {
+    right: -3px;
+  }
+}
+
+.sec-box {
+  min-height: 100svh;
+  padding: 140px 50px;
+}
+
+.modal-content-box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  display: none;
 }/*# sourceMappingURL=style.css.map */

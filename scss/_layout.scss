@@ -3,6 +3,34 @@
 @use "utility" as *;
 @use "core" as *;
 
+@keyframes scrollAnimation {
+  0% {
+    left: 0;
+    right: unset;
+    width: 0;
+  }
+  30% {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  50% {
+    width: 100%;
+    left: unset;
+    right: 0;
+  }
+  70% {
+    width: 100%;
+    left: unset;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    left: unset;
+    right: 0;
+  }
+}
+
 // --------------------------------------------------
 // Content-main
 // --------------------------------------------------
@@ -33,6 +61,7 @@
       position: fixed;
       left: 50%;
       transform: translateX(-50%);
+      z-index: 10;
     }
 
     &:before {
@@ -68,6 +97,7 @@ header {
       line-height: 1;
       padding: 0 50px;
       margin-bottom: 40px;
+      letter-spacing: 0.06em;
     }
     .nav-list {
       & > ul {
@@ -107,6 +137,7 @@ header {
 
       color: $primary;
       margin-top: 40px;
+      padding: 0 50px;
     }
   }
 }
@@ -115,6 +146,63 @@ header {
 // Key-visual
 // --------------------------------------------------
 .key-visual {
+  position: relative;
+  .txt-box {
+    h2 {
+      font: {
+        size: 8rem;
+        family: $f-roboto;
+      }
+      color: $primary;
+      line-height: 0.9;
+      margin-bottom: 50px;
+    }
+    .sub-key-txt {
+      font: {
+        size: 4rem;
+        weight: 300;
+        family: $f-roboto;
+      }
+      line-height: 0.8;
+      margin-bottom: 50px;
+    }
+    .sub-txt {
+      font: {
+        size: 2rem;
+        weight: 300;
+        family: $f-roboto;
+      }
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+  }
+  .scroll-btn {
+    position: absolute;
+    right: 35px;
+    bottom: 50px;
+    width: 150px;
+    transform: rotate(90deg);
+    transform-origin: right bottom;
+    padding-bottom: 5px;
+    & > .txt {
+      font: {
+        size: 1rem;
+        weight: 300;
+        family: $f-roboto;
+      }
+      color: #fff;
+    }
+    &:before {
+      content: "";
+      width: 0;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      animation: scrollAnimation 2s infinite;
+    }
+  }
 }
 
 // --------------------------------------------------
@@ -144,4 +232,79 @@ body {
 // Footer
 // --------------------------------------------------
 footer {
+  padding: 50px;
+  .f-wrap {
+    .en-ttl {
+      font: {
+        size: 3.5rem;
+        weight: 700;
+        family: $f-roboto;
+      }
+      color: $primary;
+      margin-bottom: 0;
+    }
+    .jp-ttl {
+      font: {
+        size: 2rem;
+        weight: 500;
+      }
+      color: $base-f-color;
+      margin-bottom: 40px;
+    }
+    .infor-list {
+      margin-bottom: 40px;
+      & > * + * {
+        margin-top: 15px;
+      }
+      & > li {
+        display: flex;
+        & > a,
+        & > span {
+          color: $base-f-color;
+          line-height: 1;
+          display: block;
+        }
+        & > span {
+          width: 60px;
+        }
+        & > a {
+          width: calc(100% - 60px);
+        }
+      }
+    }
+    .btn-list {
+      & > * + * {
+        margin-top: 10px;
+      }
+      & > li {
+        & > a {
+          display: inline-block;
+          text-decoration: none;
+          padding-right: 20px;
+          position: relative;
+          &:after {
+            content: "\f105";
+            font: {
+              weight: 900;
+              family: $f-fa;
+            }
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+          }
+          @media only screen and (min-width: $screen-pc-min) {
+            &:after {
+              transition: 0.3s;
+            }
+            &:hover {
+              &:after {
+                right: -3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -20,12 +20,12 @@ $container-width: 500px;
 // ブレークポイント
 $screen-tb: 1000px;
 $screen-sp: 500px;
-$screen-pc-min: $screen-tb + 1;
-$screen-tb-min: $screen-sp + 1;
+$screen-pc-min: $screen-tb + 1px;
+$screen-tb-min: $screen-sp + 1px;
 
 // ページ内リンクの時にヘッダー数値を除くための数値
-$header-height: 80px;
-$header-height-tb: 70px;
+$header-height: 0;
+$header-height-tb: 0;
 
 // フォントベース
 $base-f-size: 1.6rem; // 基本フォントサイズ
