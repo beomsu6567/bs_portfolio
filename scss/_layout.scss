@@ -263,6 +263,7 @@ footer {
           color: $base-f-color;
           line-height: 1;
           display: block;
+          word-break: break-all;
         }
         & > span {
           width: 60px;

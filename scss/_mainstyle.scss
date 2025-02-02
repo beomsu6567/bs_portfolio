@@ -9,11 +9,190 @@
 }
 
 .modal-content-box {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  display: none;
+  .modal-content {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    .bg-box {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(#000, 0.6);
+    }
+    .content-box {
+      width: calc(100% - 40px);
+      max-width: 500px;
+      max-height: calc(100svh - 40px);
+      background: #282c34;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 10px;
+      padding: 50px;
+      overflow: auto;
+      & > .modal-close-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        & > span {
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 3px;
+          border-radius: 2px;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          background: #fff;
+          transform: rotate(45deg);
+          &:nth-of-type(2) {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+      & > .ttl {
+        font: {
+          size: 2rem;
+          weight: 700;
+        }
+        color: $primary;
+        margin-bottom: 20px;
+      }
+      .slick-wrapper {
+        margin-bottom: 40px;
+        .item {
+          .img-box {
+            padding-bottom: 64.75%;
+            position: relative;
+            & > img {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+        .slick-arrow {
+          position: absolute;
+          z-index: 2;
+          top: calc(50% - 20px);
+          transform: translateY(-50%);
+          cursor: pointer;
+          &:before {
+            font: {
+              size: 2.5rem;
+              weight: 900;
+              family: $f-fa;
+            }
+            color: $primary;
+            cursor: pointer;
+          }
+          &.prev {
+            left: -30px;
+            &:before {
+              content: "\f104";
+            }
+          }
+          &.next {
+            right: -30px;
+            &:before {
+              content: "\f105";
+            }
+          }
+        }
+        .slick-dots {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0 10px;
+          margin-top: 20px;
+          & > li {
+            width: 15px;
+            height: 15px;
+            background: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+            &.slick-active,
+            &:hover {
+              background: $primary;
+            }
+            & > button {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    &.-open {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.profile-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  & > .img-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  & > .txt-box {
+    width: calc(100% - 120px);
+    & > p {
+      font-weight: 300;
+      line-height: 1;
+    }
+    & > .birth-txt {
+      font: {
+        size: 1rem;
+      }
+      margin-bottom: 3px;
+    }
+    & > .en-name {
+      font: {
+        size: 2rem;
+        weight: 400;
+        family: $f-roboto;
+      }
+      letter-spacing: 0.04em;
+      color: $primary;
+      margin-bottom: 5px;
+    }
+    & > .kanji-name {
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+      & > .kana-txt {
+        font: {
+          size: 1.4rem;
+        }
+      }
+    }
+    & > .from-txt {
+      font-size: 1.4rem;
+    }
+  }
 }

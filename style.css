@@ -5371,6 +5371,20 @@ a[href^="tel:"] {
   }
 }
 
+.table01 {
+  width: 100%;
+}
+.table01 > tbody > tr > th, .table01 > tbody > tr > td {
+  text-align: left;
+  border-top: 1px solid #adbac7;
+  border-bottom: 1px solid #adbac7;
+  vertical-align: top;
+  padding: 20px 10px;
+}
+.table01 > tbody > tr > th {
+  width: 170px;
+}
+
 .en-ttl {
   font-size: 5rem;
   font-weight: 400;
@@ -5384,6 +5398,14 @@ h3 {
   font-weight: 700;
   letter-spacing: 0.06em;
   margin-bottom: 80px;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  margin-bottom: 25px;
 }
 
 .card-list {
@@ -5652,6 +5674,7 @@ footer .f-wrap .infor-list > li > a, footer .f-wrap .infor-list > li > span {
   color: #768390;
   line-height: 1;
   display: block;
+  word-break: break-all;
 }
 footer .f-wrap .infor-list > li > span {
   width: 60px;
@@ -5691,12 +5714,178 @@ footer .f-wrap .btn-list > li > a:after {
   padding: 140px 50px;
 }
 
-.modal-content-box {
+.modal-content-box .modal-content {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 100;
   top: 0;
   left: 0;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.modal-content-box .modal-content .bg-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.modal-content-box .modal-content .content-box {
+  width: calc(100% - 40px);
+  max-width: 500px;
+  max-height: calc(100svh - 40px);
+  background: #282c34;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 50px;
+  overflow: auto;
+}
+.modal-content-box .modal-content .content-box > .modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.modal-content-box .modal-content .content-box > .modal-close-btn > span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: #fff;
+  transform: rotate(45deg);
+}
+.modal-content-box .modal-content .content-box > .modal-close-btn > span:nth-of-type(2) {
+  transform: rotate(-45deg);
+}
+.modal-content-box .modal-content .content-box > .ttl {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #adbac7;
+  margin-bottom: 20px;
+}
+.modal-content-box .modal-content .content-box .slick-wrapper {
+  margin-bottom: 40px;
+}
+.modal-content-box .modal-content .content-box .slick-wrapper .item .img-box {
+  padding-bottom: 64.75%;
+  position: relative;
+}
+.modal-content-box .modal-content .content-box .slick-wrapper .item .img-box > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.modal-content-box .modal-content .content-box .slick-wrapper .slick-arrow {
+  position: absolute;
+  z-index: 2;
+  top: calc(50% - 20px);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.modal-content-box .modal-content .content-box .slick-wrapper .slick-arrow:before {
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  color: #adbac7;
+  cursor: pointer;
+}
+.modal-content-box .modal-content .content-box .slick-wrapper .slick-arrow.prev {
+  left: -30px;
+}
+.modal-content-box .modal-content .content-box .slick-wrapper .slick-arrow.prev:before {
+  content: "\f104";
+}
+.modal-content-box .modal-content .content-box .slick-wrapper .slick-arrow.next {
+  right: -30px;
+}
+.modal-content-box .modal-content .content-box .slick-wrapper .slick-arrow.next:before {
+  content: "\f105";
+}
+.modal-content-box .modal-content .content-box .slick-wrapper .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 10px;
+  margin-top: 20px;
+}
+.modal-content-box .modal-content .content-box .slick-wrapper .slick-dots > li {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.modal-content-box .modal-content .content-box .slick-wrapper .slick-dots > li.slick-active, .modal-content-box .modal-content .content-box .slick-wrapper .slick-dots > li:hover {
+  background: #adbac7;
+}
+.modal-content-box .modal-content .content-box .slick-wrapper .slick-dots > li > button {
   display: none;
+}
+.modal-content-box .modal-content.-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.profile-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.profile-box > .img-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile-box > .img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.profile-box > .txt-box {
+  width: calc(100% - 120px);
+}
+.profile-box > .txt-box > p {
+  font-weight: 300;
+  line-height: 1;
+}
+.profile-box > .txt-box > .birth-txt {
+  font-size: 1rem;
+  margin-bottom: 3px;
+}
+.profile-box > .txt-box > .en-name {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Roboto", serif;
+  letter-spacing: 0.04em;
+  color: #adbac7;
+  margin-bottom: 5px;
+}
+.profile-box > .txt-box > .kanji-name {
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+.profile-box > .txt-box > .kanji-name > .kana-txt {
+  font-size: 1.4rem;
+}
+.profile-box > .txt-box > .from-txt {
+  font-size: 1.4rem;
 }/*# sourceMappingURL=style.css.map */

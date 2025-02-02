@@ -50,6 +50,7 @@
     <!-- googleFont -->
 
     <link rel="stylesheet" href="css/fontawesome-free/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -184,17 +185,17 @@
                   <span><!--  --></span>
                 </div>
                 <p class="ttl">タイトルタイトル</p>
-                <div class="swiper-modal-img">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                <div class="slick-wrapper">
+                  <div class="item">
+                    <div class="img-box">
                       <img src="img/page/index/img01.png" width="400" height="259" alt="トップページ" loading="lazy" />
                     </div>
-                    <div class="swiper-slide">
-                      <img src="img/page/index/img01.png" width="400" height="259" alt="サブページ" loading="lazy" />
+                  </div>
+                  <div class="item">
+                    <div class="img-box">
+                      <img src="img/page/index/img01.png" width="400" height="259" alt="トップページ" loading="lazy" />
                     </div>
                   </div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
                 </div>
                 <table class="table01">
                   <tbody>
@@ -238,17 +239,17 @@
                   <span><!--  --></span>
                 </div>
                 <p class="ttl">タイトルタイトル</p>
-                <div class="swiper-modal-img">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                <div class="slick-wrapper">
+                  <div class="item">
+                    <div class="img-box">
                       <img src="img/page/index/img01.png" width="400" height="259" alt="トップページ" loading="lazy" />
                     </div>
-                    <div class="swiper-slide">
-                      <img src="img/page/index/img01.png" width="400" height="259" alt="サブページ" loading="lazy" />
+                  </div>
+                  <div class="item">
+                    <div class="img-box">
+                      <img src="img/page/index/img01.png" width="400" height="259" alt="トップページ" loading="lazy" />
                     </div>
                   </div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
                 </div>
                 <table class="table01">
                   <tbody>
@@ -292,17 +293,17 @@
                   <span><!--  --></span>
                 </div>
                 <p class="ttl">タイトルタイトル</p>
-                <div class="swiper-modal-img">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                <div class="slick-wrapper">
+                  <div class="item">
+                    <div class="img-box">
                       <img src="img/page/index/img01.png" width="400" height="259" alt="トップページ" loading="lazy" />
                     </div>
-                    <div class="swiper-slide">
-                      <img src="img/page/index/img01.png" width="400" height="259" alt="サブページ" loading="lazy" />
+                  </div>
+                  <div class="item">
+                    <div class="img-box">
+                      <img src="img/page/index/img01.png" width="400" height="259" alt="トップページ" loading="lazy" />
                     </div>
                   </div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
                 </div>
                 <table class="table01">
                   <tbody>
@@ -346,17 +347,17 @@
                   <span><!--  --></span>
                 </div>
                 <p class="ttl">タイトルタイトル</p>
-                <div class="swiper-modal-img">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                <div class="slick-wrapper">
+                  <div class="item">
+                    <div class="img-box">
                       <img src="img/page/index/img01.png" width="400" height="259" alt="トップページ" loading="lazy" />
                     </div>
-                    <div class="swiper-slide">
-                      <img src="img/page/index/img01.png" width="400" height="259" alt="サブページ" loading="lazy" />
+                  </div>
+                  <div class="item">
+                    <div class="img-box">
+                      <img src="img/page/index/img01.png" width="400" height="259" alt="トップページ" loading="lazy" />
                     </div>
                   </div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
                 </div>
                 <table class="table01">
                   <tbody>
@@ -550,5 +551,24 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(".slick-wrapper").each(function (i, t) {
+        $(t).slick({
+          dots: true,
+          arrows: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          prevArrow: '<div class="prev"></div>',
+          nextArrow: '<div class="next"></div>',
+        });
+      });
+      $(".modal-btn").on("click", function () {
+        $($(".modal-content")[$(this).index()]).addClass("-open");
+      });
+      $(".modal-close-btn,.modal-content .bg-box").on("click", function () {
+        $(this).closest(".modal-content").removeClass("-open");
+      });
+    </script>
   </body>
 </html>
