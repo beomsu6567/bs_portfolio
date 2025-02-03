@@ -74,6 +74,68 @@
       transform-origin: center;
     }
   }
+  @media only screen and (max-width: $screen-tb) {
+    header {
+      width: calc(100% - 500px);
+    }
+    main {
+      margin-left: calc(100% - 500px);
+      &:before,
+      &:after {
+        left: unset;
+        transform: translateX(0);
+        right: 0;
+      }
+      &:after {
+        transform: translateX(0) rotate(180deg);
+      }
+    }
+    footer {
+      width: 500px;
+      margin-left: auto;
+      position: relative;
+      .f-wrap {
+        margin-bottom: 50px;
+        .en-ttl {
+          font-size: 2.5rem;
+          text-align: center;
+        }
+        .jp-ttl {
+          font-size: 2re;
+          text-align: center;
+        }
+      }
+      .f-wrap-tb {
+        h1 {
+          font-size: 2.5rem;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .copy {
+          font-family: $f-roboto;
+          text-align: center;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: $screen-sp) {
+    header {
+      width: 100%;
+      height: auto;
+      z-index: 100;
+    }
+    main {
+      width: 100%;
+      margin-left: 0;
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+    footer {
+      width: 100%;
+    }
+  }
 }
 
 // --------------------------------------------------
@@ -89,7 +151,7 @@ header {
     justify-content: space-between;
     .logo-box {
       font: {
-        size: 3rem;
+        size: clamp(1rem, 2vw, 3rem);
         weight: 700;
         family: $f-roboto;
       }
@@ -102,7 +164,7 @@ header {
     .nav-list {
       & > ul {
         & > li {
-          padding: 30px 50px;
+          padding: 2.5svh 50px;
           transition: 0.3s;
           & > .en-txt {
             font: {
@@ -138,6 +200,76 @@ header {
       color: $primary;
       margin-top: 40px;
       padding: 0 50px;
+    }
+  }
+  .slide-menu {
+    display: none;
+  }
+  @media only screen and (max-width: $screen-sp) {
+    .h-wrap {
+      padding: 20px;
+      & > .logo-box {
+        font-size: 2.5rem;
+        padding: 0;
+        margin-bottom: 0;
+      }
+      & > .nav-list {
+        position: fixed;
+        top: 65px;
+        left: 100%;
+        width: 100%;
+        z-index: 1;
+        background: #394049;
+        bottom: 0;
+        transition: 0.3s;
+        body.-open & {
+          left: 0;
+        }
+      }
+      .copy {
+        display: none;
+      }
+      .slide-menu {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        display: block;
+        & > span {
+          display: block;
+          width: 100%;
+          height: 2px;
+          background: #fff;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
+          transition: 0.3s;
+          &:nth-of-type(1) {
+            transform: translateY(-10px);
+          }
+          &:nth-of-type(3) {
+            transform: translateY(10px);
+          }
+        }
+        body.-open & {
+          & > span {
+            &:nth-of-type(1) {
+              transform: rotate(25deg);
+            }
+            &:nth-of-type(2) {
+              opacity: 0;
+            }
+            &:nth-of-type(3) {
+              transform: rotate(-25deg);
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -203,6 +335,22 @@ header {
       animation: scrollAnimation 2s infinite;
     }
   }
+  @media only screen and (max-width: $screen-sp) {
+    .txt-box {
+      h2 {
+        font-size: 6rem;
+      }
+      .sub-key-txt {
+        font-size: 2.8rem;
+      }
+      .sub-txt {
+        font-size: 1.6rem;
+      }
+    }
+    .scroll-btn {
+      bottom: 0;
+    }
+  }
 }
 
 // --------------------------------------------------
@@ -218,6 +366,10 @@ body {
   width: 100%;
   text-align: justify;
   background: #282c34;
+  &.-open {
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 // --------------------------------------------------
@@ -236,7 +388,7 @@ footer {
   .f-wrap {
     .en-ttl {
       font: {
-        size: 3.5rem;
+        size: clamp(1.5rem, 3vw, 3.5rem);
         weight: 700;
         family: $f-roboto;
       }
@@ -245,7 +397,7 @@ footer {
     }
     .jp-ttl {
       font: {
-        size: 2rem;
+        size: clamp(1rem, 1.6vw, 2rem);
         weight: 500;
       }
       color: $base-f-color;

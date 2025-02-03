@@ -6,6 +6,9 @@
 .sec-box {
   min-height: 100svh;
   padding: 140px 50px;
+  @media only screen and (max-width: $screen-sp) {
+    padding: 100px 30px;
+  }
 }
 
 .modal-content-box {
@@ -73,6 +76,7 @@
       .slick-wrapper {
         margin-bottom: 40px;
         .item {
+          padding: 0 10px;
           .img-box {
             padding-bottom: 64.75%;
             position: relative;
@@ -141,6 +145,23 @@
       visibility: visible;
     }
   }
+  @media only screen and (max-width: $screen-sp) {
+    .modal-content {
+      .content-box {
+        padding: 50px 20px;
+        .slick-wrapper {
+          .slick-arrow {
+            &.prev {
+              left: -10px;
+            }
+            &.next {
+              right: -10px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .profile-box {
@@ -194,5 +215,32 @@
     & > .from-txt {
       font-size: 1.4rem;
     }
+  }
+}
+
+.thankyou-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & > p {
+    text-align: center;
+    &.tankyou-en {
+      font: {
+        size: 5rem;
+        weight: 700;
+        family: $f-roboto;
+      }
+      letter-spacing: 0.1em;
+      margin-bottom: 10px;
+    }
+    &.tankyou-jp {
+      font-size: 1.3rem;
+      letter-spacing: 0.08em;
+    }
+  }
+  @media only screen and (max-width: $screen-sp) {
+    min-height: auto;
+    padding: 150px 0;
   }
 }

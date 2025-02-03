@@ -86,8 +86,14 @@
             </ul>
           </nav>
           <p class="copy">©choe beomsu</p>
+          <div class="slide-menu sp">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </header>
+      <div class="slide-bg-box"><!--  --></div>
       <main>
         <section id="link01" class="key-visual sec-box">
           <div class="txt-box">
@@ -418,8 +424,8 @@
               <table class="table02">
                 <thead>
                   <tr>
-                    <th>年</th>
-                    <th>月</th>
+                    <th style="width: 80px">年</th>
+                    <th style="width: 55px">月</th>
                     <th>学歴</th>
                   </tr>
                 </thead>
@@ -442,8 +448,8 @@
               <table class="table02">
                 <thead>
                   <tr>
-                    <th>年</th>
-                    <th>月</th>
+                    <th style="width: 80px">年</th>
+                    <th style="width: 55px">月</th>
                     <th>職歴</th>
                   </tr>
                 </thead>
@@ -469,11 +475,11 @@
           <table class="table03">
             <thead>
               <tr>
-                <th></th>
+                <th style="width: 125px"></th>
                 <th>
                   自分で調べて
                   <br />
-                  コードをかける
+                  コードがかける
                 </th>
                 <th>
                   自分で考えて
@@ -514,14 +520,12 @@
             </tbody>
           </table>
         </section>
-        <section class="sec-box">
+        <section class="sec-box thankyou-box">
           <p class="tankyou-en">Thank You</p>
           <p class="tankyou-jp">最後までご覧いただきありがとうございます</p>
         </section>
       </main>
-      <div class="page-top">
-        <a href="#"><i class="fa-solid fa-caret-up"></i></a>
-      </div>
+
       <footer>
         <div class="f-wrap">
           <p class="en-ttl">CONTACT</p>
@@ -545,8 +549,8 @@
             </li>
           </ul>
         </div>
-        <div class="tb f-wrap">
-          <h1 class="logo-box">LOGO</h1>
+        <div class="tb f-wrap-tb">
+          <h1 class="logo-box">Choe BeomSu</h1>
           <p class="copy">©choe beomsu</p>
         </div>
       </footer>
@@ -562,12 +566,6 @@
           prevArrow: '<div class="prev"></div>',
           nextArrow: '<div class="next"></div>',
         });
-      });
-      $(".modal-btn").on("click", function () {
-        $($(".modal-content")[$(this).index()]).addClass("-open");
-      });
-      $(".modal-close-btn,.modal-content .bg-box").on("click", function () {
-        $(this).closest(".modal-content").removeClass("-open");
       });
     </script>
   </body>
