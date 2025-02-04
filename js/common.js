@@ -22,7 +22,7 @@ $(function () {
       diff[i] = Math.abs($(t).offset().top - $(window).scrollTop());
       index = diff[index] < diff[i] ? index : i;
     });
-    $(".h-wrap .nav-list li").removeClass("-current");
-    $($(".h-wrap .nav-list li")[index]).addClass("-current");
+    $(".h-wrap .nav-list li .txt-box").removeClass("-current");
+    $($(".h-wrap .nav-list li .txt-box")[index]).addClass("-current");
   });
 });

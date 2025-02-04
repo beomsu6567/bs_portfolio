@@ -164,27 +164,30 @@ header {
     .nav-list {
       & > ul {
         & > li {
-          padding: 2.5svh 50px;
-          transition: 0.3s;
-          & > .en-txt {
-            font: {
-              size: 3rem;
-              weight: 700;
-              family: $f-roboto;
-            }
-            color: $primary;
-            line-height: 1;
-            margin-bottom: 5px;
-          }
-          & > .jp-txt {
-            font-weight: 700;
+          .txt-box {
             transition: 0.3s;
-          }
-          &:hover,
-          &.-current {
-            background: #394049;
-            & > .jp-txt {
+            padding: 2.5svh 50px;
+            & > .en-txt {
+              font: {
+                size: 3rem;
+                weight: 700;
+                family: $f-roboto;
+              }
               color: $primary;
+              line-height: 1;
+              margin-bottom: 5px;
+            }
+            & > .jp-txt {
+              font-weight: 700;
+              transition: 0.3s;
+            }
+
+            &:hover,
+            &.-current {
+              background: #394049;
+              & > .jp-txt {
+                color: $primary;
+              }
             }
           }
         }
@@ -206,6 +209,7 @@ header {
     display: none;
   }
   @media only screen and (max-width: $screen-sp) {
+    overflow: hidden;
     .h-wrap {
       padding: 20px;
       & > .logo-box {
@@ -222,8 +226,17 @@ header {
         background: #394049;
         bottom: 0;
         transition: 0.3s;
+        padding-top: 20px;
         body.-open & {
           left: 0;
+        }
+        & > ul {
+          & > li {
+            transition: 0 !important;
+            transition-delay: 0 !important;
+            opacity: 1 !important;
+            transform: translateZ(0) !important;
+          }
         }
       }
       .copy {
@@ -336,6 +349,9 @@ header {
     }
   }
   @media only screen and (max-width: $screen-sp) {
+    &.sec-box {
+      padding: 160px 30px;
+    }
     .txt-box {
       h2 {
         font-size: 6rem;
@@ -458,6 +474,12 @@ footer {
           }
         }
       }
+    }
+  }
+  @media only screen and (max-width: $screen-tb) {
+    .f-wrap {
+      transform: translateZ(0) !important;
+      opacity: 1 !important;
     }
   }
 }
