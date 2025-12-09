@@ -1,912 +1,1963 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head prefix="og: //ogp.me/ns# fb: //ogp.me/ns/fb# website: //ogp.me/ns/website#">
-    <meta charset="UTF-8" />
-    <title>CBS｜ポートフォリオ</title>
-    <!-- XSS保護 (現代のブラウザでは自動ですが念のため) -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="チェボンスのポートフォリオです。制作実績からプロフィール、スキルを記載していますのでご覧ください。" />
-    <meta name="keywords" content="htmlコーダー,web制作,ポートフォリオ,web,html,css,javascript,php,wordpress" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-    <meta name="format-detection" content="email=no,telephone=no,address=no" />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Choe BeomSu" />
-    <meta property="og:title" content="CBS｜ポートフォリオ" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="チェボンスのポートフォリオです。制作実績からプロフィール、スキルを記載していますのでご覧ください。" />
-    <meta property="og:url" content="https://beomsu6567.github.io/bs_portfolio/" />
-    <meta property="og:site_name" content="CBS｜ポートフォリオ" />
-    <meta property="og:image" content="img/common/ogp.jpg" />
-    <meta property="og:locale" content="ja_JP" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="img/common/ogp.jpg" />
 
-    <link rel="canonical" href="https://beomsu6567.github.io/bs_portfolio/" />
+<head prefix="og: //ogp.me/ns# fb: //ogp.me/ns/fb# website: //ogp.me/ns/website#">
+  <meta charset="UTF-8" />
+  <title>CBS｜ポートフォリオ</title>
+  <!-- XSS保護 (現代のブラウザでは自動ですが念のため) -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="チェボンスのポートフォリオです。制作実績からプロフィール、スキルを記載していますのでご覧ください。" />
+  <meta name="keywords" content="htmlコーダー,web制作,ポートフォリオ,web,html,css,javascript,php,wordpress" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+  <meta name="format-detection" content="email=no,telephone=no,address=no" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Choe BeomSu" />
+  <meta property="og:title" content="CBS｜ポートフォリオ" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="チェボンスのポートフォリオです。制作実績からプロフィール、スキルを記載していますのでご覧ください。" />
+  <meta property="og:url" content="https://beomsu6567.github.io/bs_portfolio/" />
+  <meta property="og:site_name" content="CBS｜ポートフォリオ" />
+  <meta property="og:image" content="img/common/ogp.jpg" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="img/common/ogp.jpg" />
 
-    <!-- ↓画像↓-->
-    <link rel="icon" href="img/favicon/16x16.png" sizes="16x16" type="image/png" />
-    <link rel="icon" href="img/favicon/32x32.png" sizes="32x32" type="image/png" />
-    <link rel="icon" href="img/favicon/48x48.png" sizes="48x48" type="image/png" />
-    <link rel="icon" href="img/favicon/62x62.png" sizes="62x62" type="image/png" />
-    <link rel="icon" href="img/favicon/96x96.png" sizes="96x96" type="image/png" />
-    <link rel="icon" href="img/favicon/144x144.png" sizes="144x144" type="image/png" />
-    <link rel="icon" href="img/favicon/150x150.png" sizes="150x150" type="image/png" />
-    <link rel="icon" href="img/favicon/180x180.png" sizes="180x180" type="image/png" />
-    <link rel="icon" href="img/favicon/256x256.png" sizes="256x256" type="image/png" />
+  <link rel="canonical" href="https://beomsu6567.github.io/bs_portfolio/" />
 
-    <!-- 150 * 150 -->
-    <link rel="apple-touch-icon-precomposed" href="img/favicon/150x150.png" />
+  <!-- ↓画像↓-->
+  <link rel="icon" href="img/favicon/16x16.png" sizes="16x16" type="image/png" />
+  <link rel="icon" href="img/favicon/32x32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="img/favicon/48x48.png" sizes="48x48" type="image/png" />
+  <link rel="icon" href="img/favicon/62x62.png" sizes="62x62" type="image/png" />
+  <link rel="icon" href="img/favicon/96x96.png" sizes="96x96" type="image/png" />
+  <link rel="icon" href="img/favicon/144x144.png" sizes="144x144" type="image/png" />
+  <link rel="icon" href="img/favicon/150x150.png" sizes="150x150" type="image/png" />
+  <link rel="icon" href="img/favicon/180x180.png" sizes="180x180" type="image/png" />
+  <link rel="icon" href="img/favicon/256x256.png" sizes="256x256" type="image/png" />
 
-    <!-- Windows用タイル設定 -->
-    <!-- 144*144 -->
-    <meta name="msapplication-TileImage" content="img/favicon/144x144.png" />
-    <meta name="msapplication-TileColor" content="#FFF" />
-    <!-- ↑画像↑ -->
+  <!-- 150 * 150 -->
+  <link rel="apple-touch-icon-precomposed" href="img/favicon/150x150.png" />
 
-    <!-- googleFont -->
-    <link rel="preconnect" href="//fonts.googleapis.com" />
-    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
-    <link href="//fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet" />
-    <!-- googleFont -->
+  <!-- Windows用タイル設定 -->
+  <!-- 144*144 -->
+  <meta name="msapplication-TileImage" content="img/favicon/144x144.png" />
+  <meta name="msapplication-TileColor" content="#FFF" />
+  <!-- ↑画像↑ -->
 
-    <link rel="stylesheet" href="css/fontawesome-free/6.4.2/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link href="//unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <!-- googleFont -->
+  <link rel="preconnect" href="//fonts.googleapis.com" />
+  <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
+  <link href="//fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet" />
+  <!-- googleFont -->
 
-  <body>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/common.js"></script>
-    <div class="content-main">
-      <header>
-        <div class="h-wrap">
-          <h1 class="logo-box">Choe BeomSu</h1>
-          <nav class="nav-list">
-            <ul>
-              <li class="hover-all" data-aos="fade-right" data-aos-delay="1300" data-aos-duration="300">
-                <a href="#link01">トップに戻る</a>
-                <div class="txt-box -current">
-                  <p class="en-txt">TOP</p>
-                  <p class="jp-txt">トップに戻る</p>
-                </div>
-              </li>
-              <li class="hover-all" data-aos="fade-right" data-aos-delay="1400" data-aos-duration="300">
-                <a href="#link02">個人制作</a>
-                <div class="txt-box">
-                  <p class="en-txt">WORKS</p>
-                  <p class="jp-txt">個人制作</p>
-                </div>
-              </li>
-              <li class="hover-all" data-aos="fade-right" data-aos-delay="1500" data-aos-duration="300">
-                <a href="#link03">プロフィール</a>
-                <div class="txt-box">
-                  <p class="en-txt">PROFILE</p>
-                  <p class="jp-txt">プロフィール</p>
-                </div>
-              </li>
-              <li class="hover-all" data-aos="fade-right" data-aos-delay="1600" data-aos-duration="300">
-                <a href="#link04">スキル</a>
-                <div class="txt-box">
-                  <p class="en-txt">SKILL</p>
-                  <p class="jp-txt">スキル</p>
-                </div>
-              </li>
-            </ul>
-          </nav>
-          <p class="copy">©choe beomsu</p>
-          <div class="slide-menu sp">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+  <link rel="stylesheet" href="css/fontawesome-free/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link href="//unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/common.js"></script>
+  <div class="content-main">
+    <header>
+      <div class="h-wrap">
+        <h1 class="logo-box">Choe BeomSu</h1>
+        <nav class="nav-list">
+          <ul>
+            <li class="hover-all" data-aos="fade-right" data-aos-delay="1300" data-aos-duration="300">
+              <a href="#link01">トップに戻る</a>
+              <div class="txt-box -current">
+                <p class="en-txt">TOP</p>
+                <p class="jp-txt">トップに戻る</p>
+              </div>
+            </li>
+            <li class="hover-all" data-aos="fade-right" data-aos-delay="1400" data-aos-duration="300">
+              <a href="#link02">制作実績</a>
+              <div class="txt-box">
+                <p class="en-txt">WORKS</p>
+                <p class="jp-txt">制作実績</p>
+              </div>
+            </li>
+            <li class="hover-all" data-aos="fade-right" data-aos-delay="1500" data-aos-duration="300">
+              <a href="#link03">プロフィール</a>
+              <div class="txt-box">
+                <p class="en-txt">PROFILE</p>
+                <p class="jp-txt">プロフィール</p>
+              </div>
+            </li>
+            <li class="hover-all" data-aos="fade-right" data-aos-delay="1600" data-aos-duration="300">
+              <a href="#link04">スキル</a>
+              <div class="txt-box">
+                <p class="en-txt">SKILL</p>
+                <p class="jp-txt">スキル</p>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <p class="copy">©choe beomsu</p>
+        <div class="slide-menu sp">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </header>
-      <div class="slide-bg-box"><!--  --></div>
-      <main>
-        <section id="link01" class="key-visual sec-box">
-          <div class="txt-box">
-            <h2 data-aos="fade-up">
-              Choe
-              <br />
-              Beom Su
-            </h2>
-            <p class="sub-key-txt" data-aos="fade-up" data-aos-delay="300">PORTFOLIO</p>
-            <p class="sub-txt" data-aos="fade-up" data-aos-delay="600">HTML CODER / WEB CODER</p>
-            <p data-aos="fade-up" data-aos-delay="900">
-              <a href="//github.com/beomsu6567/" class="git-btn" target="_blank">github</a>
-            </p>
-          </div>
-          <div class="scroll-btn hover-all">
-            <a href="#link02">個人製作コンテンツ</a>
-            <p class="txt">SCROLL</p>
-          </div>
-        </section>
-        <section id="link02" class="sec-box">
-          <p class="en-ttl">WORKS</p>
-          <h3>個人製作</h3>
-          <ul class="card-list">
-            <li class="modal-btn">
-              <div class="img-box">
-                <img src="img/page/index/img14.png" alt="オアシスリサイクルショップ" loading="lazy" />
-              </div>
-              <div class="txt-box">
-                <time datetime="2025-03-07">2025.03.07</time>
-                <p class="ttl">オアシスリサイクルショップ</p>
-                <ul class="tag-list">
-                  <li><i class="fa-brands fa-html5"></i></li>
-                  <li><i class="fa-brands fa-css3-alt"></i></li>
-                  <li><i class="fa-brands fa-js"></i></li>
-                  <li><i class="fa-brands fa-php"></i></li>
-                  <li><i class="fa-brands fa-wordpress-simple"></i></li>
-                </ul>
-              </div>
-            </li>
-            <li class="modal-btn">
-              <div class="img-box">
-                <img src="img/page/index/img11.png" alt="ECサイト練習" loading="lazy" />
-              </div>
-              <div class="txt-box">
-                <time datetime="2025-02-16">2025.02.16</time>
-                <p class="ttl">ECサイト練習</p>
-                <ul class="tag-list">
-                  <li><i class="fa-brands fa-wordpress-simple"></i></li>
-                </ul>
-              </div>
-            </li>
-            <li class="modal-btn">
-              <div class="img-box">
-                <img src="img/page/index/img10.png" alt="兵庫旅館" loading="lazy" />
-              </div>
-              <div class="txt-box">
-                <time datetime="2025-02-04">2025.02.04</time>
-                <p class="ttl">兵庫旅館</p>
-                <ul class="tag-list">
-                  <li><i class="fa-brands fa-html5"></i></li>
-                  <li><i class="fa-brands fa-css3-alt"></i></li>
-                  <li><i class="fa-brands fa-js"></i></li>
-                </ul>
-              </div>
-            </li>
-            <li class="modal-btn">
-              <div class="img-box">
-                <img src="img/page/index/img09.png" alt="チェのポートフォリオ" loading="lazy" />
-              </div>
-              <div class="txt-box">
-                <time datetime="2025-02-04">2025.02.04</time>
-                <p class="ttl">チェのポートフォリオ</p>
-                <ul class="tag-list">
-                  <li><i class="fa-brands fa-html5"></i></li>
-                  <li><i class="fa-brands fa-css3-alt"></i></li>
-                  <li><i class="fa-brands fa-js"></i></li>
-                </ul>
-              </div>
-            </li>
-            <li class="modal-btn">
-              <div class="img-box">
-                <img src="img/page/index/img05.png" alt="川西教会" loading="lazy" />
-              </div>
-              <div class="txt-box">
-                <time datetime="2025-01-31">2025.01.31</time>
-                <p class="ttl">川西教会</p>
-                <ul class="tag-list">
-                  <li><i class="fa-brands fa-html5"></i></li>
-                  <li><i class="fa-brands fa-css3-alt"></i></li>
-                  <li><i class="fa-brands fa-js"></i></li>
-                  <li><i class="fa-brands fa-php"></i></li>
-                  <li><i class="fa-brands fa-wordpress-simple"></i></li>
-                </ul>
-              </div>
-            </li>
-            <li class="modal-btn">
-              <div class="img-box">
-                <img src="img/page/index/img04.jpg" alt="簡単なチャットボット実装" loading="lazy" />
-              </div>
-              <div class="txt-box">
-                <time datetime="2025-01-31">2025.01.06</time>
-                <p class="ttl">簡単なチャットボット実装</p>
-                <ul class="tag-list">
-                  <li><i class="fa-brands fa-html5"></i></li>
-                  <li><i class="fa-brands fa-css3-alt"></i></li>
-                  <li><i class="fa-brands fa-js"></i></li>
-                </ul>
-              </div>
-            </li>
-            <li class="modal-btn">
-              <div class="img-box">
-                <img src="img/page/index/img03.png" alt="ガチャガチャコンテンツ作成" loading="lazy" />
-              </div>
-              <div class="txt-box">
-                <time datetime="2025-01-31">2025.01.06</time>
-                <p class="ttl">ガチャガチャコンテンツ作成</p>
-                <ul class="tag-list">
-                  <li><i class="fa-brands fa-html5"></i></li>
-                  <li><i class="fa-brands fa-css3-alt"></i></li>
-                  <li><i class="fa-brands fa-js"></i></li>
-                </ul>
-              </div>
-            </li>
-            <li class="modal-btn">
-              <div class="img-box">
-                <img src="img/page/index/img01.jpg" alt="自作テンプレート" loading="lazy" />
-              </div>
-              <div class="txt-box">
-                <time datetime="2025-01-31">2025.01.04</time>
-                <p class="ttl">自作テンプレート</p>
-                <ul class="tag-list">
-                  <li><i class="fa-brands fa-html5"></i></li>
-                  <li><i class="fa-brands fa-css3-alt"></i></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <ul class="modal-content-box">
-            <li class="modal-content">
-              <div class="bg-box"><!--  --></div>
-              <div class="content-box">
-                <div class="modal-close-btn">
-                  <span><!--  --></span>
-                  <span><!--  --></span>
-                </div>
-                <p class="ttl">オアシスリサイクルショップ</p>
-                <div class="slick-wrapper">
-                  <div class="item">
-                    <div class="img-box">
-                      <img src="img/page/index/img14.png" width="400" height="259" alt="オアシスリサイクルショップ" loading="lazy" />
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="img-box">
-                      <img src="img/page/index/img15.png" width="400" height="259" alt="オアシスリサイクルショップ" loading="lazy" />
-                    </div>
-                  </div>
-                </div>
-                <table class="table01">
-                  <tbody>
-                    <tr>
-                      <th>私用した言語</th>
-                      <td>HTML,CSS（SCSS）、JavaScript（jQuery）、PHP、wordpress</td>
-                    </tr>
-                    <tr>
-                      <th>デモサイト</th>
-                      <td>
-                        <a href="https://ss448310.stars.ne.jp/oasis-recycle/" target="_blank">https://ss448310.stars.ne.jp/oasis-recycle/</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>元のサイト</th>
-                      <td>
-                        <a href="https://www.oasis-recycle.com/" target="_blank">https://www.oasis-recycle.com/</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>制作背景</th>
-                      <td>
-                        知り合い（叔父）の会社のホームページをリニューアルしてみました。<br />
-                        全体がわかりやすくどんな会社かを紹介できるように配置などを工夫して作成しました。
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </li>
-            <li class="modal-content">
-              <div class="bg-box"><!--  --></div>
-              <div class="content-box">
-                <div class="modal-close-btn">
-                  <span><!--  --></span>
-                  <span><!--  --></span>
-                </div>
-                <p class="ttl">ECサイト練習</p>
-                <div class="slick-wrapper">
-                  <div class="item">
-                    <div class="img-box">
-                      <img src="img/page/index/img11.png" width="400" height="259" alt="ECサイト練習" loading="lazy" />
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="img-box">
-                      <img src="img/page/index/img12.png" width="400" height="259" alt="ECサイト練習" loading="lazy" />
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="img-box">
-                      <img src="img/page/index/img13.png" width="400" height="259" alt="ECサイト練習" loading="lazy" />
-                    </div>
-                  </div>
-                </div>
-                <table class="table01">
-                  <tbody>
-                    <tr>
-                      <th>私用した言語</th>
-                      <td>wordpress</td>
-                    </tr>
-                    <tr>
-                      <th>デモサイト</th>
-                      <td>
-                        <a href="https://ss448310.stars.ne.jp/" target="_blank">https://ss448310.stars.ne.jp/</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>使用したプラグイン（wordpress）</th>
-                      <td>
-                        <a href="https://wpplugin.cloudsecure.ne.jp/cloudsecure_wp_security/" target="_blank">CloudSecure WP Security</a>
-                        <br />
-                        <a href="https://woocommerce.com/" target="_blank">WooCommerce</a>
-                        <br />
-                        <a href="https://wordpress.org/plugins/woocommerce-gateway-stripe/" target="_blank">WooCommerce Stripe ゲートウェイ</a>
-                        <br />
-                        <a href="https://wpexpertshub.com/" target="_blank">WC Cancel Order</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>制作背景</th>
-                      <td>
-                        ECサイトの練習で作成してみたページとなります。<br />
-                        シンプルに必要な機能のみで実装してみました。 決済システムも繋げました。<br /><br />
-
-                        【決済テスト】<br />
-                        カード番号：4242424242424242<br />
-                        有効期限：03/33<br />
-                        セキュリティコード：333
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </li>
-            <li class="modal-content">
-              <div class="bg-box"><!--  --></div>
-              <div class="content-box">
-                <div class="modal-close-btn">
-                  <span><!--  --></span>
-                  <span><!--  --></span>
-                </div>
-                <p class="ttl">兵庫旅館（実際にはない施設です。）</p>
-                <div class="slick-wrapper">
-                  <div class="item">
-                    <div class="img-box">
-                      <img src="img/page/index/img10.png" width="400" height="259" alt="兵庫旅館" loading="lazy" />
-                    </div>
-                  </div>
-                </div>
-                <table class="table01">
-                  <tbody>
-                    <tr>
-                      <th>私用した言語</th>
-                      <td>HTML, CSS, JavaScript(Jquery)</td>
-                    </tr>
-                    <tr>
-                      <th>デモサイト</th>
-                      <td>
-                        <a href="https://beomsu6567.github.io/hyougo-japanesehotel/" target="_blank">https://beomsu6567.github.io/hyougo-japanesehotel/</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>githubリンク</th>
-                      <td>
-                        <a href="https://github.com/beomsu6567/hyougo-japanesehotel" target="_blank">https://github.com/beomsu6567/hyougo-japanesehotel</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>制作背景</th>
-                      <td>
-                        旅館ページを作成してみました。<br />
-                        和風を活かした旅館を表したく工夫しながらコーディングをしてみました。<br />
-                        （予約機能などはまだ未実装）
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </li>
-            <li class="modal-content">
-              <div class="bg-box"><!--  --></div>
-              <div class="content-box">
-                <div class="modal-close-btn">
-                  <span><!--  --></span>
-                  <span><!--  --></span>
-                </div>
-                <p class="ttl">チェのポートフォリオ</p>
-                <div class="slick-wrapper">
-                  <div class="item">
-                    <div class="img-box">
-                      <img src="img/page/index/img09.png" width="400" height="259" alt="トップページ" loading="lazy" />
-                    </div>
-                  </div>
-                </div>
-                <table class="table01">
-                  <tbody>
-                    <tr>
-                      <th>私用した言語</th>
-                      <td>HTML, CSS, JavaScript(Jquery)</td>
-                    </tr>
-                    <tr>
-                      <th>デモサイト</th>
-                      <td>
-                        <a href="https://beomsu6567.github.io/bs_portfolio/" target="_blank">https://beomsu6567.github.io/bs_portfolio/</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>githubリンク</th>
-                      <td>
-                        <a href="https://github.com/beomsu6567/bs_portfolio" target="_blank">https://github.com/beomsu6567/bs_portfolio</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>制作背景</th>
-                      <td>
-                        自分のコード実績を残すためのポートフォリオを作成してみました。
-                        <br />
-                        面白そうをwebに実装できるようにこれからもどんどん実力をあげていきたいと思います。
-                        <br />
-                        また、ポートフォリオのデザインはコーダー感をもう少しでも出すためにコーディングエディターのような背景や文字色で作成してみました。
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </li>
-            <li class="modal-content">
-              <div class="bg-box"><!--  --></div>
-              <div class="content-box">
-                <div class="modal-close-btn">
-                  <span><!--  --></span>
-                  <span><!--  --></span>
-                </div>
-                <p class="ttl">川西教会</p>
-                <div class="slick-wrapper">
-                  <div class="item">
-                    <div class="img-box">
-                      <img src="img/page/index/img05.png" width="400" height="259" alt="川西教会" loading="lazy" />
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="img-box">
-                      <img src="img/page/index/img06.png" width="400" height="259" alt="川西教会" loading="lazy" />
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="img-box">
-                      <img src="img/page/index/img07.png" width="400" height="259" alt="川西教会" loading="lazy" />
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="img-box">
-                      <img src="img/page/index/img08.png" width="400" height="259" alt="川西教会" loading="lazy" />
-                    </div>
-                  </div>
-                </div>
-                <table class="table01">
-                  <tbody>
-                    <tr>
-                      <th>私用した言語</th>
-                      <td>HTML, CSS, JavaScript, php(wordpress)</td>
-                    </tr>
-                    <tr>
-                      <th>サイト</th>
-                      <td>
-                        <a href="http://kawanisichurch.com/" target="_blank">http://kawanisichurch.com/</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>使用したプラグイン（JS）</th>
-                      <td>
-                        <a href="//swiperjs.com/" target="_blank">swiper</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>使用したプラグイン（wordpress）</th>
-                      <td>
-                        <a href="//ja.wordpress.org/plugins/all-in-one-seo-pack/" target="_blank">All in One SEO</a>
-                        <br />
-                        <a href="https://ja.wordpress.org/plugins/classic-editor/" target="_blank">Classic Editor</a>
-                        <br />
-                        <a href="https://ja.wordpress.org/plugins/ewww-image-optimizer/" target="_blank">EWWW Image Optimizer</a>
-                        <br />
-                        <a href="https://ja.wordpress.org/plugins/siteguard/" target="_blank">SiteGuard WP Plugin</a>
-                        <br />
-                        <a href="https://ja.wordpress.org/plugins/smart-custom-fields/" target="_blank">Smart Custom Fields</a>
-                        <br />
-                        <a href="https://ja.wordpress.org/plugins/instagram-feed/" target="_blank">Smash Balloon Instagram Feed</a>
-                        <br />
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>使用テンプレート</th>
-                      <td>
-                        <a href="//github.com/beomsu6567/template" target="_blank">自作テンプレート</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>制作背景</th>
-                      <td>
-                        自分が所属している教会のページを今年に入って新たに作成してみました。
-                        <br />
-                        トップページは全体図が見やすく必要な情報をすぐに見つけることができるように作成してみました。
-                        <br />
-                        サーバーが韓国のレンタルサーバーでssl化することが無料ではないためにまだssl化はできていません。
-                        <br />
-                        今後、ssl化も自分でできるようにしていきたいです。
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </li>
-            <li class="modal-content">
-              <div class="bg-box"><!--  --></div>
-              <div class="content-box">
-                <div class="modal-close-btn">
-                  <span><!--  --></span>
-                  <span><!--  --></span>
-                </div>
-                <p class="ttl">簡単なチャットボット作成</p>
-                <div class="slick-wrapper">
-                  <div class="item">
-                    <div class="img-box">
-                      <img src="img/page/index/img04.jpg" width="400" height="259" alt="トップページ" loading="lazy" />
-                    </div>
-                  </div>
-                </div>
-                <table class="table01">
-                  <tbody>
-                    <tr>
-                      <th>私用した言語</th>
-                      <td>HTML, CSS, JavaScript(Jquery)</td>
-                    </tr>
-                    <tr>
-                      <th>デモサイト</th>
-                      <td>
-                        <a href="https://beomsu6567.github.io/simple-chartqa/chartqa_example.html" target="_blank">https://beomsu6567.github.io/simple-chartqa/chartqa_example.html</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>githubリンク</th>
-                      <td>
-                        <a href="https://github.com/beomsu6567/simple-chartqa" target="_blank">https://github.com/beomsu6567/simple-chartqa</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>制作背景</th>
-                      <td>
-                        ページで「よくある質問」など簡単な項目をすぐに答えられるチャットを作成してみました。
-                        <br />
-                        オプションなども用意しておりどこのページでも実装できるようにプラグインとして作成してみました。
-                        <br />
-                        キーワードの検索もできるようにしてみました。
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </li>
-            <li class="modal-content">
-              <div class="bg-box"><!--  --></div>
-              <div class="content-box">
-                <div class="modal-close-btn">
-                  <span><!--  --></span>
-                  <span><!--  --></span>
-                </div>
-                <p class="ttl">ガチャガチャコンテンツ作成</p>
-                <div class="slick-wrapper">
-                  <div class="item">
-                    <div class="img-box">
-                      <img src="img/page/index/img03.png" width="400" height="259" alt="トップページ" loading="lazy" />
-                    </div>
-                  </div>
-                </div>
-                <table class="table01">
-                  <tbody>
-                    <tr>
-                      <th>私用した言語</th>
-                      <td>HTML, CSS, JavaScript(Jquery)</td>
-                    </tr>
-                    <tr>
-                      <th>デモサイト</th>
-                      <td>
-                        <a href="https://beomsu6567.github.io/gatyagatya/" target="_blank">https://beomsu6567.github.io/gatyagatya/</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>githubリンク</th>
-                      <td>
-                        <a href="https://github.com/beomsu6567/gatyagatya" target="_blank">https://github.com/beomsu6567/gatyagatya</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>制作背景</th>
-                      <td>
-                        確率を求める記述を勉強しながらガチャガチャのデザインもCSSでしてみようとなって作成してみました。
-                        <br />
-                        単純に勉強が大きな目的でしたけどこのようにがちゃがちゃの形を作成することでより楽しみながら勉強ができました。
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </li>
-            <li class="modal-content">
-              <div class="bg-box"><!--  --></div>
-              <div class="content-box">
-                <div class="modal-close-btn">
-                  <span><!--  --></span>
-                  <span><!--  --></span>
-                </div>
-                <p class="ttl">自作テンプレート</p>
-                <div class="slick-wrapper">
-                  <div class="item">
-                    <div class="img-box">
-                      <img src="img/page/index/img01.jpg" width="400" height="259" alt="トップページ" loading="lazy" />
-                    </div>
-                  </div>
-                </div>
-                <table class="table01">
-                  <tbody>
-                    <tr>
-                      <th>私用した言語</th>
-                      <td>HTML, SCSS（css）</td>
-                    </tr>
-                    <tr>
-                      <th>githubリンク</th>
-                      <td>
-                        <a href="https://github.com/beomsu6567/template" target="_blank">https://github.com/beomsu6567/template</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>制作背景</th>
-                      <td>
-                        自分がweb制作する際に事前に用意されていたらいい記述をcore.scssや各パーツに合うscssファイルを生成して組み合わせています。
-                        <br />
-                        こちらのテンプレートをベースで個人製作のwebページを作成しています。
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section id="link03" class="sec-box">
-          <p class="en-ttl">PROFILE</p>
-          <h3>プロフィール</h3>
-          <div class="profile-box">
+      </div>
+    </header>
+    <div class="slide-bg-box">
+      <!--  -->
+    </div>
+    <main>
+      <section id="link01" class="key-visual sec-box">
+        <div class="txt-box">
+          <h2 data-aos="fade-up">
+            Choe
+            <br />
+            Beom Su
+          </h2>
+          <p class="sub-key-txt" data-aos="fade-up" data-aos-delay="300">PORTFOLIO</p>
+          <p class="sub-txt" data-aos="fade-up" data-aos-delay="600">HTML CODER / WEB CODER</p>
+          <p data-aos="fade-up" data-aos-delay="900">
+            <a href="//github.com/beomsu6567/" class="git-btn" target="_blank">github</a>
+          </p>
+        </div>
+        <div class="scroll-btn hover-all">
+          <a href="#link02">制作実績コンテンツ</a>
+          <p class="txt">SCROLL</p>
+        </div>
+      </section>
+      <section id="link02" class="sec-box">
+        <p class="en-ttl">WORKS</p>
+        <h3>制作実績</h3>
+        <ul class="card-list">
+          <li class="modal-btn">
             <div class="img-box">
-              <img src="img/page/index/img02.jpg" width="120" height="120" alt="プロフィール画像" loading="lazy" />
+              <img src="img/page/index/kimura/img01.png" alt="株式会社木村牧場" loading="lazy" />
             </div>
             <div class="txt-box">
-              <p class="birth-txt">1994.06.04</p>
-              <p class="en-name">Choe BeomSu</p>
-              <p class="kanji-name">
-                崔 範洙
-                <span class="kana-txt">（チェ ボンス）</span>
-              </p>
-              <p class="from-txt">韓国出身</p>
+              <p class="ttl">株式会社木村牧場</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+                <li><i class="fa-brands fa-php"></i></li>
+                <li><i class="fa-brands fa-wordpress-simple"></i></li>
+              </ul>
             </div>
-          </div>
-          <div class="owl80 owl50-tb">
-            <div class="appeal-box">
-              <h4>学歴</h4>
-              <table class="table02">
-                <thead>
-                  <tr>
-                    <th style="width: 80px">年</th>
-                    <th style="width: 55px">月</th>
-                    <th>学歴</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>2013年</td>
-                    <td>3月</td>
-                    <td>新都高等学校 卒業</td>
-                  </tr>
-                  <tr>
-                    <td>2016年</td>
-                    <td>10月</td>
-                    <td>メリック日本語学校 入学</td>
-                  </tr>
-                  <tr>
-                    <td>2018年</td>
-                    <td>3月</td>
-                    <td>メリック日本語学校 卒業</td>
-                  </tr>
-                  <tr>
-                    <td>2018年</td>
-                    <td>4月</td>
-                    <td>
-                      ECCコンピューター専門学校
-                      <br />
-                      マルチメディア研究学科
-                      <br />
-                      WEBエンジニアコース 入学
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2021年</td>
-                    <td>3月</td>
-                    <td>
-                      ECCコンピューター専門学校
-                      <br />
-                      マルチメディア研究学科
-                      <br />
-                      WEBエンジニアコース 卒業
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/nagasawadc/img01.png" alt="長澤歯科医院" loading="lazy" />
             </div>
-            <div class="appeal-box">
-              <h4>職歴</h4>
-              <table class="table02">
-                <thead>
-                  <tr>
-                    <th style="width: 80px">年</th>
-                    <th style="width: 55px">月</th>
-                    <th>職歴</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      2021年
-                      <br />
-                      ~
-                      <br />
-                      2024年
-                    </td>
-                    <td>
-                      4月
-                      <br />
-                      ~
-                      <br />
-                      10月
-                    </td>
-                    <td>
-                      リタワークス株式会社
-                      <br />
-                      <br />
-                      所属：開発部 フロントエンド
-                      <br />
-                      <br />
-                      【実績】
-                      <br />
-                      トップページからサブページ、CMSの組み込みまでweb制作における全般的な作業を担当しました。
-                      <br />
-                      また、社内のコーディングテンプレートの更新や新規記述を追加する業務も担当して社内の作業の効率をあげることができました。
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      2025年
-                      <br />
-                      ~
-                      <br />
-                      現在
-                    </td>
-                    <td>10月</td>
-                    <td>
-                      株式会社ブッキングリゾート
-                      <br />
-                      <br />
-                      所属：システム課 フロントエンド
-                      <br />
-                      <br />
-                      【実績】
-                      <br />
-                      社内のwordpressページの更新や修正が主な業務の内容となり、社内の新規ページ作成や開発も担当しています。
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="txt-box">
+              <p class="ttl">長澤歯科医院</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+                <li><i class="fa-brands fa-php"></i></li>
+                <li><i class="fa-brands fa-wordpress-simple"></i></li>
+              </ul>
             </div>
-          </div>
-        </section>
-        <section id="link04" class="sec-box">
-          <p class="en-ttl">SKILL</p>
-          <h3>スキル</h3>
-          <table class="table03">
-            <thead>
-              <tr>
-                <th style="width: 125px"></th>
-                <th>
-                  自分で調べて
-                  <br />
-                  コードがかける
-                </th>
-                <th>
-                  自分で考えて
-                  <br />
-                  コードがかける
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>HTML</th>
-                <td><!--  --></td>
-                <td><i class="fa-solid fa-circle"></i></td>
-              </tr>
-              <tr>
-                <th>CSS</th>
-                <td><!--  --></td>
-                <td><i class="fa-solid fa-circle"></i></td>
-              </tr>
-              <tr>
-                <th>
-                  JavaScript
-                  <br />
-                  (Juqery)
-                </th>
-                <td><!--  --></td>
-                <td><i class="fa-solid fa-circle"></i></td>
-              </tr>
-              <tr>
-                <th>
-                  php
-                  <br />
-                  (wordpress)
-                </th>
-                <td><i class="fa-solid fa-circle"></i></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-        <section class="sec-box thankyou-box">
-          <p class="tankyou-en">Thank You</p>
-          <p class="tankyou-jp">最後までご覧いただきありがとうございます</p>
-        </section>
-      </main>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/kyk/img01.png" alt="京都薬事広告ラボ" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">京都薬事広告ラボ</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+                <li><i class="fa-brands fa-php"></i></li>
+                <li><i class="fa-brands fa-wordpress-simple"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/maekawa/img01.png" alt="マエカワ動物病院｜求人サイト" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">マエカワ動物病院｜求人サイト</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+                <li><i class="fa-brands fa-php"></i></li>
+                <li><i class="fa-brands fa-wordpress-simple"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/kanoa/img01.png" alt="KANOA THE VILLAS～富士山中湖" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">KANOA THE VILLAS～富士山中湖</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+                <li><i class="fa-brands fa-php"></i></li>
+                <li><i class="fa-brands fa-wordpress-simple"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/img10.png" alt="兵庫旅館" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">兵庫旅館</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/img09.png" alt="チェのポートフォリオ" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">チェのポートフォリオ</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/img05.png" alt="川西教会" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">川西教会</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+                <li><i class="fa-brands fa-php"></i></li>
+                <li><i class="fa-brands fa-wordpress-simple"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/parcic/img01.png" alt="特定非営利活動法人パルシック" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">特定非営利活動法人パルシック</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/japanheart/img01.png" alt="認定特定非営利活動法人ジャパンハート" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">認定特定非営利活動法人ジャパンハート</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/roboco/img01.png" alt="一般社団法人Robo Co-op" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">一般社団法人Robo Co-op</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/albatross/img01.png" alt="公益財団法人山階鳥類研究所" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">公益財団法人山階鳥類研究所</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/ifuto/img01.png" alt="IFUTOプログラムページ｜認定NPO法人キッズドア" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">IFUTOプログラムページ｜認定NPO法人キッズドア</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/syakaifukushi/img01.png" alt="社会福祉法人 小平市社会福祉協議会" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">社会福祉法人 小平市社会福祉協議会</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/chibanowafund/img01.png" alt="公益財団法人ちばのWA地域づくり基金" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">公益財団法人ちばのWA地域づくり基金</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/banushisun/img01.png" alt="BANUSHI SUN!｜特定非営利活動法人 日本乗馬普及協会" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">BANUSHI SUN!｜特定非営利活動法人 日本乗馬普及協会</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/education/img01.png" alt="NPO法人エデュケーションエーキューブ" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">NPO法人エデュケーションエーキューブ</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/eboard/img01.png" alt="10周年記念ページ｜NPO法人eboard" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">10周年記念ページ｜NPO法人eboard</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/sendai/img01.png" alt="NPO法人まちづくりスポット仙台" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">NPO法人まちづくりスポット仙台</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/kamakama/img01.png" alt="靴専用物品寄付サイト KamaKama｜認定NPO法人釜ヶ崎支援機構" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">靴専用物品寄付サイト KamaKama｜認定NPO法人釜ヶ崎支援機構</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+                <li><i class="fa-brands fa-php"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/kumamori/img01.png" alt="一般財団法人 日本熊森協会" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">一般財団法人 日本熊森協会</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/gakusai/img01.png" alt="がくさい病院" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">がくさい病院</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/komatsu/img01.png" alt="小松市民病院" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">小松市民病院</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/asai/img01.png" alt="あさい病院" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">あさい病院</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-btn">
+            <div class="img-box">
+              <img src="img/page/index/himeji/img01.png" alt="姫路赤十字病院" loading="lazy" />
+            </div>
+            <div class="txt-box">
+              <p class="ttl">姫路赤十字病院</p>
+              <ul class="tag-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+          </li>
 
-      <footer>
-        <div class="f-wrap" data-aos="fade-left" data-aos-delay="1200" data-aos-duration="300">
-          <p class="en-ttl">CONTACT</p>
-          <p class="jp-ttl">お問い合わせ</p>
-          <ul class="infor-list">
-            <li>
-              <span>TEL</span>
-              <a href="tel:09090952532" target="_blank">090-9095-2532</a>
-            </li>
-            <li>
-              <span>Email</span>
-              <a href="mailto:beomsu6567@gmail.com">beomsu6567@gmail.com</a>
-            </li>
-          </ul>
-          <ul class="btn-list">
-            <!-- <li>
+        </ul>
+        <ul class="modal-content-box">
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">株式会社木村牧場<br>（リニュアル）</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/kimura/img01.png" width="400" height="259" alt="株式会社木村牧場" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/kimura/img02.png" width="400" height="259" alt="株式会社木村牧場" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, php(wordpress)</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://kimurabokujyou.com/" target="_blank">https://kimurabokujyou.com/</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>
+                      コーディングからwordpressに組み込みまで全て対応しました。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">長澤歯科医院<br>（リニュアル）</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/nagasawadc/img01.png" width="400" height="259" alt="長澤歯科医院" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/nagasawadc/img02.png" width="400" height="259" alt="長澤歯科医院" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, php(wordpress)</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://nagasawadc.com/" target="_blank">https://nagasawadc.com/</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>
+                      コーディングからwordpressに組み込みまで全て対応しました。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">京都薬事広告ラボ株式会社(リニューアル)</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/kyk/img01.png" width="400" height="259" alt="京都薬事広告ラボ株式会社(リニューアル)" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/kyk/img02.png" width="400" height="259" alt="京都薬事広告ラボ株式会社(リニューアル)" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, php(wordpress)</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://kyk-lab.com/" target="_blank">https://kyk-lab.com/</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>
+                      コーディングからwordpressに組み込みまで全て対応しました。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">マエカワ動物病院｜求人サイト<br>（リニューアル）</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/maekawa/img01.png" width="400" height="259" alt="マエカワ動物病院｜求人サイト" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/maekawa/img02.png" width="400" height="259" alt="マエカワ動物病院｜求人サイト" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/maekawa/img03.png" width="400" height="259" alt="マエカワ動物病院｜求人サイト" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/maekawa/img04.png" width="400" height="259" alt="マエカワ動物病院｜求人サイト" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, php(wordpress)</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://recruit.maekawaah.com/" target="_blank">https://recruit.maekawaah.com/</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>
+                      コーディングからwordpressに組み込みまで全て対応しました。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">KANOA THE VILLAS～富士山中湖</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/kanoa/img01.png" width="400" height="259" alt="KANOA THE VILLAS～富士山中湖" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/kanoa/img02.png" width="400" height="259" alt="KANOA THE VILLAS～富士山中湖" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, php(wordpress)</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://www.yamanashi-privatevilla.com/" target="_blank">https://www.yamanashi-privatevilla.com/</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>
+                      デザインからコーディング、wordpressに組み込みまで全て自分で対応しました。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">兵庫旅館（実際にはない施設です。）</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/img10.png" width="400" height="259" alt="兵庫旅館" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript(Jquery)</td>
+                  </tr>
+                  <tr>
+                    <th>デモサイト</th>
+                    <td>
+                      <a href="https://beomsu6567.github.io/hyougo-japanesehotel/" target="_blank">https://beomsu6567.github.io/hyougo-japanesehotel/</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>githubリンク</th>
+                    <td>
+                      <a href="https://github.com/beomsu6567/hyougo-japanesehotel" target="_blank">https://github.com/beomsu6567/hyougo-japanesehotel</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>
+                      デザインからコーディングまで全て自分で対応しました。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">チェのポートフォリオ</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/img09.png" width="400" height="259" alt="トップページ" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript(Jquery)</td>
+                  </tr>
+                  <tr>
+                    <th>デモサイト</th>
+                    <td>
+                      <a href="https://beomsu6567.github.io/bs_portfolio/" target="_blank">https://beomsu6567.github.io/bs_portfolio/</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>githubリンク</th>
+                    <td>
+                      <a href="https://github.com/beomsu6567/bs_portfolio" target="_blank">https://github.com/beomsu6567/bs_portfolio</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>
+                      デザインからコーディングまで全て自分で対応しました。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">川西教会</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/img05.png" width="400" height="259" alt="川西教会" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/img06.png" width="400" height="259" alt="川西教会" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/img07.png" width="400" height="259" alt="川西教会" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/img08.png" width="400" height="259" alt="川西教会" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, php(wordpress)</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="http://kawanisichurch.com/" target="_blank">http://kawanisichurch.com/</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>
+                      デザインからコーディング、wordpressに組み込みまで全て自分で対応しました。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">特定非営利活動法人パルシック</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/parcic/img01.png" width="400" height="259" alt="特定非営利活動法人パルシック" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/parcic/img02.png" width="400" height="259" alt="特定非営利活動法人パルシック" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/parcic/img03.png" width="400" height="259" alt="特定非営利活動法人パルシック" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/parcic/img04.png" width="400" height="259" alt="特定非営利活動法人パルシック" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, 独自CMS</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://www.parcic.org/" target="_blank">https://www.parcic.org/</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>コーディングからCMSの組み込みまで全般を対応しました。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">認定特定非営利活動法人ジャパンハート</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/japanheart/img01.png" width="400" height="259" alt="認定特定非営利活動法人ジャパンハート" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/japanheart/img02.png" width="400" height="259" alt="認定特定非営利活動法人ジャパンハート" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, 独自CMS</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://japanheart-hospital.org/" target="_blank">https://japanheart-hospital.org/</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>コーディングからCMSの組み込みまで全般を対応しました。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">一般社団法人Robo Co-op</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/roboco/img01.png" width="400" height="259" alt="一般社団法人Robo Co-op" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/roboco/img02.png" width="400" height="259" alt="一般社団法人Robo Co-op" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/roboco/img03.png" width="400" height="259" alt="一般社団法人Robo Co-op" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, 独自CMS</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://roboco-op.org/jp" target="_blank">https://roboco-op.org/jp</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>コーディングからCMSの組み込みまで全般を対応しました。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">公益財団法人山階鳥類研究所</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/albatross/img01.png" width="400" height="259" alt="公益財団法人山階鳥類研究所" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/albatross/img02.png" width="400" height="259" alt="公益財団法人山階鳥類研究所" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://www.yamashina.or.jp/albatross/kifu.html" target="_blank">https://www.yamashina.or.jp/albatross/kifu.html</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>コーディングから公開まで対応しました。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">IFUTOプログラムページ｜認定NPO法人キッズドア</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/ifuto/img01.png" width="400" height="259" alt="IFUTOプログラムページ｜認定NPO法人キッズドア" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/ifuto/img02.png" width="400" height="259" alt="IFUTOプログラムページ｜認定NPO法人キッズドア" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/ifuto/img03.png" width="400" height="259" alt="IFUTOプログラムページ｜認定NPO法人キッズドア" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, 独自CMS</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://ifuto.kidsdoor.net/" target="_blank">https://ifuto.kidsdoor.net/</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>コーディングからCMSの組み込みまで全般を対応しました。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">社会福祉法人 小平市社会福祉協議会</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/syakaifukushi/img01.png" width="400" height="259" alt="社会福祉法人 小平市社会福祉協議会" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/syakaifukushi/img02.png" width="400" height="259" alt="社会福祉法人 小平市社会福祉協議会" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, 独自CMS</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://www.syakaifukushi.kodaira.tokyo.jp/index.html" target="_blank">https://www.syakaifukushi.kodaira.tokyo.jp/index.html</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>コーディングからCMSの組み込みまで全般を対応しました。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">社会福祉法人 小平市社会福祉協議会</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/chibanowafund/img01.png" width="400" height="259" alt="社会福祉法人 小平市社会福祉協議会" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/chibanowafund/img02.png" width="400" height="259" alt="社会福祉法人 小平市社会福祉協議会" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, 独自CMS</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://chibanowafund.org/index.html" target="_blank">https://chibanowafund.org/index.html</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>コーディングからCMSの組み込みまで全般を対応しました。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">BANUSHI SUN!｜特定非営利活動法人 日本乗馬普及協会</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/banushisun/img01.png" width="400" height="259" alt="BANUSHI SUN!｜特定非営利活動法人 日本乗馬普及協会" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/banushisun/img02.png" width="400" height="259" alt="BANUSHI SUN!｜特定非営利活動法人 日本乗馬普及協会" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, 独自CMS</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://nihonjoba.org/banushisun/index.html" target="_blank">https://nihonjoba.org/banushisun/index.html</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>コーディングからCMSの組み込みまで全般を対応しました。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">NPO法人エデュケーションエーキューブ</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/education/img01.png" width="400" height="259" alt="NPO法人エデュケーションエーキューブ" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/education/img02.png" width="400" height="259" alt="NPO法人エデュケーションエーキューブ" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, 独自CMS</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://education-a3.net/index.html" target="_blank">https://education-a3.net/index.html</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>コーディングからCMSの組み込みまで全般を対応しました。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">10周年記念ページ｜NPO法人eboard</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/eboard/img01.png" width="400" height="259" alt="10周年記念ページ｜NPO法人eboard" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/eboard/img02.png" width="400" height="259" alt="10周年記念ページ｜NPO法人eboard" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, 独自CMS</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://info.eboard.jp/10th.html" target="_blank">https://info.eboard.jp/10th.html</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>コーディングからCMSの組み込みまで全般を対応しました。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">NPO法人まちづくりスポット仙台</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/sendai/img01.png" width="400" height="259" alt="NPO法人まちづくりスポット仙台" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/sendai/img02.png" width="400" height="259" alt="NPO法人まちづくりスポット仙台" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, 独自CMS</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://www.machispo-sendai.com/" target="_blank">https://www.machispo-sendai.com/</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>コーディングからCMSの組み込みまで全般を対応しました。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">靴専用物品寄付サイト KamaKama｜認定NPO法人釜ヶ崎支援機構</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/kamakama/img01.png" width="400" height="259" alt="靴専用物品寄付サイト KamaKama｜認定NPO法人釜ヶ崎支援機構" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/kamakama/img02.png" width="400" height="259" alt="靴専用物品寄付サイト KamaKama｜認定NPO法人釜ヶ崎支援機構" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, php</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://kamakama.shop/" target="_blank">https://kamakama.shop/</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>
+                      コーディング（トップページ、サブページ）から公開まで対応しました。<br>
+                      また、phpで靴の出品ページや管理ページを作成しました。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">一般財団法人 日本熊森協会</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/kumamori/img01.png" width="400" height="259" alt="一般財団法人 日本熊森協会" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/kumamori/img02.png" width="400" height="259" alt="一般財団法人 日本熊森協会" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, 独自CMS</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://kumamori.org/" target="_blank">https://kumamori.org/</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>コーディングからCMSの組み込みまで全般を対応しました。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">がくさい病院</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/gakusai/img01.png" width="400" height="259" alt="がくさい病院" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/gakusai/img02.png" width="400" height="259" alt="がくさい病院" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, 独自CMS</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://gakusai.or.jp/hospital" target="_blank">https://gakusai.or.jp/hospital</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>コーディングからCMSの組み込みまで全般を対応しました。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">小松市民病院</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/komatsu/img01.png" width="400" height="259" alt="小松市民病院" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/komatsu/img02.png" width="400" height="259" alt="小松市民病院" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, 独自CMS</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://hosp.komatsu.ishikawa.jp/" target="_blank">https://hosp.komatsu.ishikawa.jp/</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>コーディングからCMSの組み込みまで全般を対応しました。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">あさい病院</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/asai/img01.png" width="400" height="259" alt="あさい病院" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/asai/img02.png" width="400" height="259" alt="あさい病院" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, 独自CMS</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://med-kouwakai.or.jp/asai-hp/index.html" target="_blank">https://med-kouwakai.or.jp/asai-hp/index.html</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>コーディングからCMSの組み込みまで全般を対応しました。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="modal-content">
+            <div class="bg-box">
+              <!--  -->
+            </div>
+            <div class="content-box">
+              <div class="modal-close-btn">
+                <span>
+                  <!--  -->
+                </span>
+                <span>
+                  <!--  -->
+                </span>
+              </div>
+              <p class="ttl">姫路赤十字病院</p>
+              <div class="slick-wrapper">
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/himeji/img01.png" width="400" height="259" alt="姫路赤十字病院" loading="lazy" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img-box">
+                    <img src="img/page/index/himeji/img02.png" width="400" height="259" alt="姫路赤十字病院" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <table class="table01">
+                <tbody>
+                  <tr>
+                    <th>私用した言語</th>
+                    <td>HTML, CSS, JavaScript, 独自CMS</td>
+                  </tr>
+                  <tr>
+                    <th>サイト</th>
+                    <td>
+                      <a href="https://himeji.jrc.or.jp/index.html" target="_blank">https://himeji.jrc.or.jp/index.html</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>担当箇所</th>
+                    <td>コーディングからCMSの組み込みまで全般を対応しました。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="link03" class="sec-box">
+        <p class="en-ttl">PROFILE</p>
+        <h3>プロフィール</h3>
+        <div class="profile-box">
+          <div class="img-box">
+            <img src="img/page/index/img02.jpg" width="120" height="120" alt="プロフィール画像" loading="lazy" />
+          </div>
+          <div class="txt-box">
+            <p class="birth-txt">1994.06.04</p>
+            <p class="en-name">Choe BeomSu</p>
+            <p class="kanji-name">
+              崔 範洙
+              <span class="kana-txt">（チェ ボンス）</span>
+            </p>
+            <p class="from-txt">韓国出身</p>
+          </div>
+        </div>
+        <div class="owl80 owl50-tb">
+          <div class="appeal-box">
+            <h4>学歴</h4>
+            <table class="table02">
+              <thead>
+                <tr>
+                  <th style="width: 80px">年</th>
+                  <th style="width: 55px">月</th>
+                  <th>学歴</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2013年</td>
+                  <td>3月</td>
+                  <td>新都高等学校 卒業</td>
+                </tr>
+                <tr>
+                  <td>2016年</td>
+                  <td>10月</td>
+                  <td>メリック日本語学校 入学</td>
+                </tr>
+                <tr>
+                  <td>2018年</td>
+                  <td>3月</td>
+                  <td>メリック日本語学校 卒業</td>
+                </tr>
+                <tr>
+                  <td>2018年</td>
+                  <td>4月</td>
+                  <td>
+                    ECCコンピューター専門学校
+                    <br />
+                    マルチメディア研究学科
+                    <br />
+                    WEBエンジニアコース 入学
+                  </td>
+                </tr>
+                <tr>
+                  <td>2021年</td>
+                  <td>3月</td>
+                  <td>
+                    ECCコンピューター専門学校
+                    <br />
+                    マルチメディア研究学科
+                    <br />
+                    WEBエンジニアコース 卒業
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="appeal-box">
+            <h4>職歴</h4>
+            <table class="table02">
+              <thead>
+                <tr>
+                  <th style="width: 80px">年</th>
+                  <th style="width: 55px">月</th>
+                  <th>職歴</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    2021年
+                    <br />
+                    ~
+                    <br />
+                    2024年
+                  </td>
+                  <td>
+                    4月
+                    <br />
+                    <br />
+                    10月
+                  </td>
+                  <td>
+                    リタワークス株式会社
+                    <br />
+                    <br />
+                    所属：開発部 フロントエンド
+                    <br />
+                    <br />
+                    【実績】
+                    <br />
+                    トップページからサブページ、CMSの組み込みまでweb制作における全般的な作業を担当しました。
+                    <br />
+                    また、社内のコーディングテンプレートの更新や新規記述を追加する業務も担当して社内の作業の効率をあげることができました。
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    2024年
+                    <br />
+                    ~
+                    <br />
+                    2025年
+                  </td>
+                  <td>
+                    10月
+                    <br>
+                    <br>
+                    4月
+                  </td>
+                  <td>
+                    株式会社ブッキングリゾート
+                    <br />
+                    <br />
+                    所属：システム課 フロントエンド
+                    <br />
+                    <br />
+                    【実績】
+                    <br />
+                    社内のwordpressページの更新や修正が主な業務の内容となり、社内の新規ページ作成や開発も担当しました。
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    2025年
+                    <br />
+                    ~
+                    <br />
+                    現在
+                  </td>
+                  <td>
+                    5月
+                  </td>
+                  <td>
+                    株式会社プロフリー
+                    <br />
+                    <br />
+                    所属：WEB事業部 WEBコーダー
+                    <br />
+                    <br />
+                    【実績】
+                    <br />
+                    WEB事業部に所属し、コーディング業務を担当しました。<br>
+                    HTML/CSS/JavaScriptによるフロント実装、PHP（WordPress）を用いたテーマ改修やサイト構築、新規ページ作成、リニューアル案件、更新・保守運用まで一連の制作業務を担当しています。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section id="link04" class="sec-box">
+        <p class="en-ttl">SKILL</p>
+        <h3>スキル</h3>
+        <table class="table03">
+          <thead>
+            <tr>
+              <th style="width: 125px"></th>
+              <th>
+                自分で調べて
+                <br />
+                コードがかける
+              </th>
+              <th>
+                自分で考えて
+                <br />
+                コードがかける
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>HTML</th>
+              <td>
+                <!--  -->
+              </td>
+              <td><i class="fa-solid fa-circle"></i></td>
+            </tr>
+            <tr>
+              <th>CSS</th>
+              <td>
+                <!--  -->
+              </td>
+              <td><i class="fa-solid fa-circle"></i></td>
+            </tr>
+            <tr>
+              <th>
+                JavaScript
+                <br />
+                (Juqery)
+              </th>
+              <td>
+                <!--  -->
+              </td>
+              <td><i class="fa-solid fa-circle"></i></td>
+            </tr>
+            <tr>
+              <th>
+                php
+                <br />
+                (wordpress)
+              </th>
+              <td><i class="fa-solid fa-circle"></i></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="sec-box thankyou-box">
+        <p class="tankyou-en">Thank You</p>
+        <p class="tankyou-jp">最後までご覧いただきありがとうございます</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="f-wrap" data-aos="fade-left" data-aos-delay="1200" data-aos-duration="300">
+        <p class="en-ttl">CONTACT</p>
+        <p class="jp-ttl">お問い合わせ</p>
+        <ul class="infor-list">
+          <li>
+            <span>TEL</span>
+            <a href="tel:07090952532" target="_blank">070-9095-2532</a>
+          </li>
+          <li>
+            <span>Email</span>
+            <a href="mailto:beomsu6567@gmail.com">beomsu6567@gmail.com</a>
+          </li>
+        </ul>
+        <ul class="btn-list">
+          <!-- <li>
               <a href="#" class="button01 -google">Google Form</a>
             </li> -->
-            <li>
-              <a href="https://github.com/beomsu6567/" class="button01 -git" target="_blank">github</a>
-            </li>
-          </ul>
-        </div>
-        <div class="tb f-wrap-tb">
-          <h1 class="logo-box">Choe BeomSu</h1>
-          <p class="copy">©choe beomsu</p>
-        </div>
-      </footer>
-    </div>
-    <script src="//unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-      $(".slick-wrapper").each(function (i, t) {
-        $(t).slick({
-          dots: true,
-          arrows: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          prevArrow: '<div class="prev"></div>',
-          nextArrow: '<div class="next"></div>',
-        });
+          <li>
+            <a href="https://github.com/beomsu6567/" class="button01 -git" target="_blank">github</a>
+          </li>
+        </ul>
+      </div>
+      <div class="tb f-wrap-tb">
+        <h1 class="logo-box">Choe BeomSu</h1>
+        <p class="copy">©choe beomsu</p>
+      </div>
+    </footer>
+  </div>
+  <script src="//unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(".slick-wrapper").each(function(i, t) {
+      $(t).slick({
+        dots: true,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<div class="prev"></div>',
+        nextArrow: '<div class="next"></div>',
       });
-      AOS.init({
-        offset: 100,
-        duration: 500,
-        delay: 200,
-        once: true,
-      });
-    </script>
-  </body>
+    });
+    AOS.init({
+      offset: 100,
+      duration: 500,
+      delay: 200,
+      once: true,
+    });
+  </script>
+</body>
+
 </html>
