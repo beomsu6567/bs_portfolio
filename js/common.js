@@ -1,9 +1,11 @@
 $(function () {
   $(".modal-btn").on("click", function () {
+    $("body").addClass("-open02");
     $($(".modal-content")[$(this).index()]).addClass("-open");
   });
   $(".modal-close-btn,.modal-content .bg-box").on("click", function () {
     $(this).closest(".modal-content").removeClass("-open");
+    $("body").removeClass("-open02");
   });
   $(".slide-menu").on("click", function () {
     if (!$("body").hasClass("-open")) {
